@@ -17,7 +17,7 @@ const firebaseConfig = {
   measurementId: "G-CE3KZW4DX6"
 };
 
-const MIN_VOTES = 5;
+const MIN_VOTES = 2;
 const TIERS = [
   { name: "S", min: 6 }, { name: "A", min: 5 }, { name: "B", min: 4 },
   { name: "C", min: 3 }, { name: "D", min: 2 }, { name: "F", min: 0 }
