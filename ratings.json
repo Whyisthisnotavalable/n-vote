@@ -1,0 +1,554 @@
+{
+  "ace": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "aerie": {
+    "category": "playable",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "archipelago": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "arena": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "ballast": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "basement": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "biohazard": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "buttonbutton": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "cantilever": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "chute": {
+    "category": "playable",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "clock": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "coliseum": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "commandeer": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "conduit": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "corridor": {
+    "category": "playable",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "crimsonTowers": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "crossfire": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "crouch": {
+    "category": "training",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "deflect": {
+    "category": "training",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "dojo": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "downpour": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "dripp": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "factory": {
+    "category": "unique",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "final": {
+    "category": "unique",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "fire": {
+    "category": "training",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "flappyGon": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "flocculation": {
+    "category": "playable",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "fortress": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "furnace": {
+    "category": "playable",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "gauntlet": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "gravitron": {
+    "category": "playable",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "heal": {
+    "category": "training",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "highrise": {
+    "category": "playable",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "hold": {
+    "category": "training",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "house": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "HVAC": {
+    "category": "playable",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "initial": {
+    "category": "unique",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "interferometer": {
+    "category": "unique",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "intervals": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "islands": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "jump": {
+    "category": "training",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "labs": {
+    "category": "playable",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "lake": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "LaunchSite": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "lock": {
+    "category": "playable",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "matterWave": {
+    "category": "training",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "missile": {
+    "category": "training",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "nailGun": {
+    "category": "training",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "ngon": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "office": {
+    "category": "playable",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "pavilion": {
+    "category": "playable",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "perplex": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "reactor": {
+    "category": "unique",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "refinery": {
+    "category": "playable",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "reservoir": {
+    "category": "unique",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "rings": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "rooftops": {
+    "category": "playable",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "ruins": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "run": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "satellite": {
+    "category": "playable",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "sewers": {
+    "category": "playable",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "shipwreck": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "shotGun": {
+    "category": "training",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "skyscrapers": {
+    "category": "playable",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "soft": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "stack": {
+    "category": "training",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "staircase": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "stereoMadness": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "stronghold": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "substructure": {
+    "category": "playable",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "subway": {
+    "category": "unique",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "superBall": {
+    "category": "training",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "superstructure": {
+    "category": "playable",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "temple": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "terminal": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "testChamber": {
+    "category": "playable",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "throw": {
+    "category": "training",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "throwAt": {
+    "category": "training",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "tlinat": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "towers": {
+    "category": "playable",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "trial": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "tunnel": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "turbine": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "unchartedCave": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "underpass": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "vats": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "vents": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "voltage": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "walk": {
+    "category": "training",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "warehouse": {
+    "category": "playable",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "yingYang": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "zenith": {
+    "category": "community",
+    "average": null,
+    "count": 0,
+    "tier": null
+  }
+}
