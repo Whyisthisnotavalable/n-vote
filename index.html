@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Map ratings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>Rate the maps</h1>
+    <p class="sub">Give each map a 1–7. Tap your rating again to remove it.</p>
+  </div>
+  <div class="account">
+    <span id="who">Checking sign-in…</span>
+    <button id="authBtn" type="button" hidden></button>
+  </div>
+</header>
+
+<section class="controls" aria-label="Filters">
+  <input id="search" type="search" placeholder="Search maps" aria-label="Search maps">
+  <div id="cats" class="cats" role="group" aria-label="Category"></div>
+  <select id="sort" aria-label="Sort">
+    <option value="name">Sort by name</option>
+    <option value="top">Highest rated</option>
+    <option value="votes">Most votes</option>
+    <option value="unrated">Not rated by me</option>
+  </select>
+</section>
+
+<p id="status" class="status" role="status"></p>
+<main id="grid" class="grid"></main>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
