@@ -1,26 +1,26 @@
 {
   "ace": {
     "category": "community",
-    "average": 2.2,
-    "count": 5,
+    "average": 2.17,
+    "count": 6,
     "tier": "D"
   },
   "aerie": {
     "category": "playable",
-    "average": 6.5,
-    "count": 6,
+    "average": 6.57,
+    "count": 7,
     "tier": "S"
   },
   "archipelago": {
     "category": "community",
-    "average": 5.8,
-    "count": 5,
+    "average": 5.83,
+    "count": 6,
     "tier": "A"
   },
   "arena": {
     "category": "community",
-    "average": 4.83,
-    "count": 6,
+    "average": 4.86,
+    "count": 7,
     "tier": "B"
   },
   "ballast": {
@@ -43,8 +43,8 @@
   },
   "buttonbutton": {
     "category": "community",
-    "average": 1.67,
-    "count": 3,
+    "average": 1.75,
+    "count": 4,
     "tier": "F"
   },
   "cantilever": {
@@ -61,8 +61,8 @@
   },
   "clock": {
     "category": "community",
-    "average": 5.5,
-    "count": 6,
+    "average": 5.14,
+    "count": 7,
     "tier": "A"
   },
   "coliseum": {
@@ -127,33 +127,33 @@
   },
   "dripp": {
     "category": "community",
-    "average": 5,
-    "count": 1,
-    "tier": null
+    "average": 6,
+    "count": 2,
+    "tier": "S"
   },
   "factory": {
     "category": "unique",
-    "average": 5.5,
-    "count": 4,
+    "average": 5.6,
+    "count": 5,
     "tier": "A"
   },
   "final": {
     "category": "unique",
     "average": 7,
-    "count": 4,
+    "count": 5,
     "tier": "S"
   },
   "fire": {
     "category": "training",
     "average": 5,
-    "count": 2,
+    "count": 3,
     "tier": "A"
   },
   "flappyGon": {
     "category": "community",
-    "average": 2.67,
-    "count": 3,
-    "tier": "D"
+    "average": 3.25,
+    "count": 4,
+    "tier": "C"
   },
   "flocculation": {
     "category": "playable",
@@ -169,8 +169,8 @@
   },
   "furnace": {
     "category": "playable",
-    "average": 5.8,
-    "count": 5,
+    "average": 5.83,
+    "count": 6,
     "tier": "A"
   },
   "gauntlet": {
@@ -181,20 +181,20 @@
   },
   "gravitron": {
     "category": "playable",
-    "average": 4.8,
-    "count": 5,
-    "tier": "B"
+    "average": 5,
+    "count": 6,
+    "tier": "A"
   },
   "heal": {
     "category": "training",
-    "average": 3,
-    "count": 2,
+    "average": 3.33,
+    "count": 3,
     "tier": "C"
   },
   "highrise": {
     "category": "playable",
-    "average": 6.5,
-    "count": 4,
+    "average": 6.6,
+    "count": 5,
     "tier": "S"
   },
   "hold": {
@@ -211,26 +211,26 @@
   },
   "HVAC": {
     "category": "playable",
-    "average": 5.5,
-    "count": 4,
+    "average": 5.8,
+    "count": 5,
     "tier": "A"
   },
   "initial": {
     "category": "unique",
-    "average": 6,
-    "count": 4,
+    "average": 6.2,
+    "count": 5,
     "tier": "S"
   },
   "interferometer": {
     "category": "unique",
-    "average": 2.5,
-    "count": 4,
-    "tier": "D"
+    "average": 3.2,
+    "count": 5,
+    "tier": "C"
   },
   "intervals": {
     "category": "community",
-    "average": 1.25,
-    "count": 4,
+    "average": 1.2,
+    "count": 5,
     "tier": "F"
   },
   "islands": {
@@ -313,8 +313,8 @@
   },
   "reactor": {
     "category": "unique",
-    "average": 5.67,
-    "count": 3,
+    "average": 5.2,
+    "count": 5,
     "tier": "A"
   },
   "refinery": {
@@ -325,9 +325,9 @@
   },
   "reservoir": {
     "category": "unique",
-    "average": 2.67,
-    "count": 3,
-    "tier": "D"
+    "average": 3.5,
+    "count": 4,
+    "tier": "C"
   },
   "rings": {
     "category": "community",
@@ -385,8 +385,8 @@
   },
   "soft": {
     "category": "community",
-    "average": 3.75,
-    "count": 4,
+    "average": 3.2,
+    "count": 5,
     "tier": "C"
   },
   "stack": {
@@ -404,7 +404,7 @@
   "stereoMadness": {
     "category": "community",
     "average": 3,
-    "count": 4,
+    "count": 5,
     "tier": "C"
   },
   "stronghold": {
@@ -421,9 +421,9 @@
   },
   "subway": {
     "category": "unique",
-    "average": 3,
-    "count": 3,
-    "tier": "C"
+    "average": 4.2,
+    "count": 5,
+    "tier": "B"
   },
   "superBall": {
     "category": "training",
@@ -451,8 +451,8 @@
   },
   "testChamber": {
     "category": "playable",
-    "average": 5.5,
-    "count": 4,
+    "average": 5.6,
+    "count": 5,
     "tier": "A"
   },
   "throw": {
@@ -511,8 +511,8 @@
   },
   "vats": {
     "category": "community",
-    "average": 6.5,
-    "count": 2,
+    "average": 6,
+    "count": 3,
     "tier": "S"
   },
   "vents": {
@@ -541,14 +541,14 @@
   },
   "yingYang": {
     "category": "community",
-    "average": 1,
-    "count": 3,
+    "average": 1.25,
+    "count": 4,
     "tier": "F"
   },
   "zenith": {
     "category": "community",
     "average": 6,
-    "count": 4,
+    "count": 5,
     "tier": "S"
   }
 }
