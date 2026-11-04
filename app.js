@@ -3,7 +3,7 @@ import {
   getAuth, onAuthStateChanged, signInWithPopup, GoogleAuthProvider, signOut
 } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
 import {
-  getDatabase, ref, get, set, remove, onValue
+  getDatabase, ref, get, set, remove, onValue, update, push, serverTimestamp
 } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-database.js";
 //hi pusheen
 const firebaseConfig = {
@@ -32,7 +32,10 @@ const state = {
 	cat: "all",
 	q: "",
 	sort: "name",
-	user: null
+	user: null,
+	files: {},
+	fileByMap: {},
+	fq: ""
 };
 
 function setStatus(msg, isError = false) {
@@ -81,6 +84,7 @@ function card(id) {
 	const s = statsOf(id);
 	const tier = tierFor(s);
 	const mine = mineOf(id);
+	const mf = state.fileByMap[id.toLowerCase()];
 	const avgText = s.count ? (s.sum / s.count).toFixed(2) : "0.00";
 	const countText = s.count ? `${s.count} rating${s.count === 1 ? "" : "s"}` : "No ratings yet";
 	const tierHtml = tier ? `<span class="tier ${tier}" title="Tier ${tier}">${tier}</span>` : `<span class="tier none" title="Needs ${minVotes} ratings for a tier">?</span>`;
@@ -93,6 +97,7 @@ function card(id) {
     <header><div><h2>${id}</h2><span class="cat">${state.maps[id]}</span></div>${tierHtml}</header>
     <p class="avg"><b>${avgText}</b> · ${countText}${mine ? ` · yours: ${mine}` : ""}</p>
     <div class="rate">${notches}</div>
+    ${mf ? `<button type="button" class="mapdl" data-dl="${mf.id}">Download map (${fmtSize(mf.size)})</button>` : ""}
   </article>`;
 }
 
@@ -132,6 +137,8 @@ async function vote(mapId, value) {
 $("grid").addEventListener("click", (e) => {
 	const b = e.target.closest("button[data-map]");
 	if (b) vote(b.dataset.map, Number(b.dataset.val));
+	const d = e.target.closest("button[data-dl]");
+	if (d) downloadFile(d.dataset.dl, setStatus);
 });
 $("cats").addEventListener("click", (e) => {
 	const b = e.target.closest("button[data-cat]");
@@ -174,7 +181,152 @@ onAuthStateChanged(auth, (user) => {
 		setStatus("");
 	}
 	render();
+	renderFiles();
 });
+
+const maxCharaceers = 200000;
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({
+	"&": "&amp;",
+	"<": "&lt;",
+	">": "&gt;",
+	'"': "&quot;",
+	"'": "&#39;"
+} [c]));
+const fmtSize = (n) => (n < 1024 ? `${n} B` : `${(n / 1024).toFixed(1)} KB`);
+
+function setFileStatus(msg, isError = false) {
+	const el = $("fileStatus");
+	el.textContent = msg;
+	el.classList.toggle("error", isError);
+}
+
+function renderFiles() {
+	$("upload").hidden = !state.user;
+	$("uploadHint").hidden = !!state.user;
+	const q = state.fq.trim().toLowerCase();
+	const mapKeys = new Set(Object.keys(state.maps).map((k) => k.toLowerCase()));
+	const list = Object.entries(state.files).map(([id, f]) => ({
+		id,
+		...f
+	})).filter((f) => [f.name, f.description, f.author].join(" ").toLowerCase().includes(q)).sort((a, b) => (b.uploaded || 0) - (a.uploaded || 0));
+	$("fileList").innerHTML = list.length ? list.map((f) => {
+		const mine = state.user && f.uid === state.user.uid;
+		const isMap = mapKeys.has(f.name.replace(/\.js$/i, "").toLowerCase());
+		const date = f.uploaded ? new Date(f.uploaded).toLocaleDateString() : "";
+		return `<div class="file">
+      <div><h3>${esc(f.name)}</h3>
+        <p>${esc(f.author)} · ${fmtSize(f.size)}${date ? " · " + date : ""}${isMap ? " · map file" : ""}</p>
+        ${f.description ? `<p>${esc(f.description)}</p>` : ""}</div>
+      <div class="actions">
+        <button type="button" data-dl="${esc(f.id)}">Download</button>
+        ${mine ? `<button type="button" class="danger" data-del="${esc(f.id)}">Delete</button>` : ""}
+      </div>
+    </div>`;
+	}).join("") : `<p class="status">No files found.</p>`;
+}
+async function uploadFile() {
+	if (!state.user) return setFileStatus("Sign in with Google to upload.", true);
+	const f = $("file").files[0];
+	if (!f) return setFileStatus("Choose a .js file first.", true);
+	if (!/\.js$/i.test(f.name)) return setFileStatus("Only .js files are allowed.", true);
+	const text = await f.text();
+	if (!text.length) return setFileStatus("That file is empty.", true);
+	if (text.length > maxCharaceers) return setFileStatus(`File is too large (limit ${maxCharaceers / 1000} KB).`, true);
+	const name = f.name.replace(/[^A-Za-z0-9._ -]/g, "_").slice(-60);
+	const desc = $("desc").value.trim().slice(0, 300);
+	const id = push(ref(db, "files")).key;
+	const meta = {
+		name,
+		size: text.length,
+		uid: state.user.uid,
+		author: (state.user.displayName || "Anonymous").slice(0, 60),
+		uploaded: serverTimestamp()
+	};
+	if (desc) meta.description = desc;
+	$("uploadBtn").disabled = true;
+	try {
+		await update(ref(db), {
+			[`files/${id}`]: meta,
+			[`fileData/${id}`]: {
+				uid: state.user.uid,
+				text
+			}
+		});
+		$("file").value = "";
+		$("desc").value = "";
+		const m = Object.keys(state.maps).find((k) => k.toLowerCase() === name.replace(/\.js$/i, "").toLowerCase());
+		setFileStatus(m ? `Uploaded ${name}. It is now the download for the ${m} map.` : `Uploaded ${name}.`);
+	}
+	catch (err) {
+		setFileStatus(`Upload failed: ${err.message}`, true);
+	}
+	finally {
+		$("uploadBtn").disabled = false;
+	}
+}
+async function downloadFile(id, report = setFileStatus) {
+	try {
+		const snap = await get(ref(db, `fileData/${id}`));
+		if (!snap.exists()) return report("That file no longer exists.", true);
+		const blob = new Blob([snap.val().text], {
+			type: "text/plain"
+		});
+		const a = document.createElement("a");
+		a.href = URL.createObjectURL(blob);
+		a.download = state.files[id]?.name || "file.js";
+		document.body.appendChild(a);
+		a.click();
+		a.remove();
+		setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+	}
+	catch (err) {
+		report(`Download failed: ${err.message}`, true);
+	}
+}
+async function deleteFile(id) {
+	if (!confirm(`Delete ${state.files[id]?.name || "this file"}?`)) return;
+	try {
+		await update(ref(db), {
+			[`files/${id}`]: null,
+			[`fileData/${id}`]: null
+		});
+		setFileStatus("Deleted.");
+	}
+	catch (err) {
+		setFileStatus(`Couldn’t delete: ${err.message}`, true);
+	}
+}
+$("filesBtn").addEventListener("click", () => $("filesDialog").showModal());
+$("filesClose").addEventListener("click", () => $("filesDialog").close());
+$("filesDialog").addEventListener("click", (e) => {
+	if (e.target === $("filesDialog")) $("filesDialog").close();
+});
+$("uploadBtn").addEventListener("click", uploadFile);
+$("fileSearch").addEventListener("input", (e) => {
+	state.fq = e.target.value;
+	renderFiles();
+});
+$("fileList").addEventListener("click", (e) => {
+	const dl = e.target.closest("[data-dl]"),
+		del = e.target.closest("[data-del]");
+	if (dl) downloadFile(dl.dataset.dl);
+	if (del) deleteFile(del.dataset.del);
+});
+onValue(ref(db, "files"), (s) => {
+	state.files = s.val() || {};
+	state.fileByMap = {};
+	for (const [id, f] of Object.entries(state.files)) {
+		if (!/\.js$/i.test(f.name || "")) continue;
+		const key = f.name.replace(/\.js$/i, "").toLowerCase();
+		const cur = state.fileByMap[key];
+		if (!cur || (f.uploaded || 0) > (cur.uploaded || 0)) state.fileByMap[key] = {
+			id,
+			...f
+		};
+	}
+	renderFiles();
+	scheduleRender();
+}, (err) => setFileStatus(`Could not load files: ${err.message}`, true));
 (async function init() {
 	setStatus("Loading maps…");
 	try {
@@ -183,6 +335,7 @@ onAuthStateChanged(auth, (user) => {
 		renderCats();
 		setStatus(Object.keys(state.maps).length ? "" : "no maps found. go ping richard on discord because something probably broke");
 		render();
+		renderFiles();
 		for (const id of Object.keys(state.maps)) {
 			onValue(ref(db, `ratings/${id}`), (s) => {
 				state.ratings[id] = s.val() || {};
