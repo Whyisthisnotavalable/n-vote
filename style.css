@@ -65,7 +65,7 @@ button { cursor: pointer; }
 .rate button:hover, .rate button:has(~ button:hover) { color: var(--accent); }
 .account #filesBtn { border: 1px solid var(--line); background: var(--surface); padding: 6px 12px; }
 dialog {
-  width: min(640px, calc(100vw - 24px)); max-height: 85vh; padding: 18px;
+  width: min(560px, calc(100vw - 24px)); padding: 18px;
   border: 1px solid var(--line); background: var(--surface); color: var(--ink);
 }
 dialog::backdrop { background: rgb(0 0 0 / .45); }
@@ -73,15 +73,11 @@ dialog::backdrop { background: rgb(0 0 0 / .45); }
 .dlg-head h2 { margin: 0; font: 800 1.6rem "Chakra Petch", sans-serif; }
 .dlg-head button { border: 1px solid var(--line); background: var(--bg); padding: 4px 10px; }
 .upload { display: grid; gap: 8px; margin: 12px 0; padding: 12px; border: 1px solid var(--line); background: var(--bg); }
-.upload input, #fileSearch { width: 100%; border: 1px solid var(--line); background: var(--surface); padding: 7px 12px; }
+.upload input[type="file"], .upload input[type="text"], .upload select { width: 100%; border: 1px solid var(--line); background: var(--surface); padding: 7px 12px; }
+.upload label { display: grid; gap: 4px; color: var(--muted); font-size: 13px; }
 .primary { justify-self: start; border: 0; padding: 8px 16px; background: var(--accent); color: var(--accent-ink); font-weight: 500; }
 .primary:disabled { opacity: .5; cursor: wait; }
-.file-list { display: grid; gap: 8px; margin-top: 8px; }
-.file { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; border: 1px solid var(--line); padding: 10px 12px; }
-.file h3 { margin: 0; font: 600 1rem "Chakra Petch", sans-serif; overflow-wrap: anywhere; }
-.file p { margin: 2px 0 0; color: var(--muted); font-size: 13px; }
-.file .actions { display: flex; gap: 6px; }
-.file .actions button { border: 1px solid var(--line); background: var(--bg); padding: 5px 10px; }
-.file .danger { color: #c53030; }
-
-.mapdl { margin-top: 8px; width: 100%; border: 1px solid var(--line); background: var(--bg); padding: 6px 10px; }
+.desc { margin: 8px 0 0; font-size: 14px; overflow-wrap: anywhere; }
+.card-actions { display: flex; gap: 8px; margin-top: 8px; }
+.card-actions button { flex: 1; border: 1px solid var(--line); background: var(--bg); padding: 6px 10px; }
+.card-actions .danger { flex: none; color: #c53030; }

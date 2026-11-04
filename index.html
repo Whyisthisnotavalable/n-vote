@@ -13,7 +13,7 @@
     <h1>Rate a map</h1>
   </div>
   <div class="account">
-    <button id="filesBtn" type="button">Files</button>
+    <button id="filesBtn" type="button">Upload</button>
     <span id="who">Checking sign-in…</span>
     <button id="authBtn" type="button" hidden></button>
   </div>
@@ -35,19 +35,18 @@
 
 <dialog id="filesDialog" aria-labelledby="filesTitle">
   <div class="dlg-head">
-    <h2 id="filesTitle">Shared files</h2>
+    <h2 id="filesTitle">Upload a map</h2>
     <button id="filesClose" type="button" aria-label="Close">✕</button>
   </div>
-  <p class="sub">Upload and download .js files. Name a file after a map (like labs.js) to make it that map’s download.</p>
+  <p class="sub">Upload a .js map file. Uploaded maps show up under the “Uploaded maps” tab, where people can rate and download them.</p>
+  <p id="uploadHint" class="status">Sign in with Google to upload.</p>
   <div id="upload" class="upload" hidden>
     <input id="file" type="file" accept=".js,text/javascript" aria-label="Choose a .js file">
     <input id="desc" type="text" maxlength="300" placeholder="Short description (optional)" aria-label="Description">
+    <label id="targetRow" hidden>Upload as <select id="target"></select></label>
     <button id="uploadBtn" type="button" class="primary">Upload</button>
   </div>
-  <p id="uploadHint" class="status">Sign in with Google to upload.</p>
-  <input id="fileSearch" type="search" placeholder="Search files" aria-label="Search files">
   <p id="fileStatus" class="status" role="status"></p>
-  <div id="fileList" class="file-list"></div>
 </dialog>
 
 <script type="module" src="app.js"></script>
