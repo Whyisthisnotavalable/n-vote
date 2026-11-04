@@ -22,7 +22,7 @@ const tiers = [
 	{ name: "S", min: 6 }, { name: "A", min: 5 }, { name: "B", min: 4 },
 	{ name: "C", min: 3 }, { name: "D", min: 2 }, { name: "F", min: 0 }
 ];
-const maximumGlutius = 200000;
+const maxCharacters = 200000;
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getDatabase(app);
@@ -38,7 +38,6 @@ const state = {
 	user: null,
 	admin: false
 };
-
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({
 	"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
 }[c]));
@@ -165,7 +164,6 @@ function fillTargets() {
 		sensitivity: "base"
 	})).map((id) => `<option value="${esc(id)}">Official map: ${esc(id)}</option>`).join("");
 }
-
 const rateSubs = {};
 
 function watchRatings(id) {
@@ -194,7 +192,6 @@ async function vote(mapId, value) {
 		setStatus(`Couldn’t save your rating: ${err.message}`, true);
 	}
 }
-
 async function uploadFile() {
 	if (!state.user) return setFileStatus("Sign in with Google to upload.", true);
 	const f = $("file").files[0];
@@ -202,8 +199,9 @@ async function uploadFile() {
 	if (!/\.js$/i.test(f.name)) return setFileStatus("Only .js files are allowed.", true);
 	const text = await f.text();
 	if (!text.length) return setFileStatus("That file is empty.", true);
-	if (text.length > maximumGlutius) return setFileStatus(`File is too large (limit ${maximumGlutius / 1000} KB).`, true);
-	const target = state.admin ? $("target").value : ""; 
+	if (text.length > maxCharacters) return setFileStatus(`File is too large (limit ${maxCharacters / 1000} KB).`, true);
+	const target = $("target").value; // this menu is only shown to admins
+	if (target && !state.admin) return setFileStatus("Only the owner can upload files for official maps.", true);
 	$("uploadBtn").disabled = true;
 	try {
 		if (target) {
@@ -285,7 +283,6 @@ async function deleteFile(id) {
 		setStatus(`Couldn’t delete: ${err.message}`, true);
 	}
 }
-
 $("grid").addEventListener("click", (e) => {
 	const b = e.target.closest("button[data-map]");
 	if (b) return vote(b.dataset.map, Number(b.dataset.val));
@@ -342,14 +339,17 @@ onAuthStateChanged(auth, (user) => {
 		setStatus("");
 		get(ref(db, `admins/${user.uid}`)).then((s) => {
 			state.admin = s.exists();
+			if (state.admin) $("who").textContent += " (admin)";
 			renderUpload();
 			scheduleRender();
-		}).catch(() => {});
+		}).catch((err) => {
+			console.error(err);
+			setStatus(`Couldn’t check admin status: ${err.message}`, true);
+		});
 	}
 	render();
 	renderUpload();
 });
-
 onValue(ref(db, "files"), (s) => {
 	state.files = s.val() || {};
 	for (const id of Object.keys(state.files)) watchRatings(id);
