@@ -16,13 +16,12 @@ const firebaseConfig = {
 	appId: "1:1092229592102:web:eff45d7f06586e0ae5e2e7",
 	measurementId: "G-CE3KZW4DX6"
 };
-
 const minVotes = 2;
 const tiers = [
 	{ name: "S", min: 6 }, { name: "A", min: 5 }, { name: "B", min: 4 },
 	{ name: "C", min: 3 }, { name: "D", min: 2 }, { name: "F", min: 0 }
 ];
-const maxCharacters = 200000;
+const maxChar = 200000;
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getDatabase(app);
@@ -153,16 +152,18 @@ function renderCats() {
 	$("cats").innerHTML = cats.map((c) => `<button type="button" data-cat="${c}" aria-pressed="${c === state.cat}">${label(c)}</button>`).join("");
 }
 
+let targetsKey = "";
+
 function renderUpload() {
 	$("upload").hidden = !state.user;
 	$("uploadHint").hidden = !!state.user;
-	$("targetRow").hidden = !state.admin;
-}
-
-function fillTargets() {
-	$("target").innerHTML = `<option value="">New uploaded map</option>` + Object.keys(state.maps).sort((a, b) => a.localeCompare(b, undefined, {
+	// the "Upload as" menu only exists for admins; for everyone else it is never put on the page
+	const key = state.admin ? "a:" + Object.keys(state.maps).join(",") : "";
+	if (key === targetsKey) return;
+	targetsKey = key;
+	$("targetRow").innerHTML = state.admin ? `<label>Upload as <select id="target"><option value="">New uploaded map</option>` + Object.keys(state.maps).sort((a, b) => a.localeCompare(b, undefined, {
 		sensitivity: "base"
-	})).map((id) => `<option value="${esc(id)}">Official map: ${esc(id)}</option>`).join("");
+	})).map((id) => `<option value="${esc(id)}">Official map: ${esc(id)}</option>`).join("") + `</select></label>` : "";
 }
 const rateSubs = {};
 
@@ -173,7 +174,6 @@ function watchRatings(id) {
 		scheduleRender();
 	}, (err) => setStatus(`Could not load ratings: ${err.message}`, true));
 }
-
 function unwatchRatings(id) {
 	rateSubs[id]();
 	delete rateSubs[id];
@@ -199,8 +199,8 @@ async function uploadFile() {
 	if (!/\.js$/i.test(f.name)) return setFileStatus("Only .js files are allowed.", true);
 	const text = await f.text();
 	if (!text.length) return setFileStatus("That file is empty.", true);
-	if (text.length > maxCharacters) return setFileStatus(`File is too large (limit ${maxCharacters / 1000} KB).`, true);
-	const target = $("target").value; // this menu is only shown to admins
+	if (text.length > maxChar) return setFileStatus(`File is too large (limit ${maxChar / 1000} KB).`, true);
+	const target = $("target")?.value || "";
 	if (target && !state.admin) return setFileStatus("Only the owner can upload files for official maps.", true);
 	$("uploadBtn").disabled = true;
 	try {
@@ -253,6 +253,7 @@ async function downloadFile(id) {
 	try {
 		const snap = await get(ref(db, `${up ? "fileData" : "mapFileData"}/${id}`));
 		if (!snap.exists()) return setStatus("That file no longer exists.", true);
+		// handed to the browser as a plain-text download; never executed
 		const blob = new Blob([snap.val().text], {
 			type: "text/plain"
 		});
@@ -369,7 +370,7 @@ onValue(ref(db, "mapFiles"), (s) => {
 		const snap = await get(ref(db, "mapList"));
 		state.maps = snap.val() || {};
 		renderCats();
-		fillTargets();
+		renderUpload();
 		setStatus(Object.keys(state.maps).length ? "" : "no maps found. go ping richard on discord because something probably broke");
 		render();
 		for (const id of Object.keys(state.maps)) watchRatings(id);
