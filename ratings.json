@@ -1,7 +1,7 @@
 {
   "ace": {
     "category": "community",
-    "average": 2.29,
+    "average": 2.14,
     "count": 7,
     "tier": "D"
   },
@@ -19,44 +19,44 @@
   },
   "arena": {
     "category": "community",
-    "average": 4.86,
+    "average": 5.14,
     "count": 7,
-    "tier": "B"
+    "tier": "A"
   },
   "ballast": {
     "category": "community",
-    "average": 6.6,
-    "count": 5,
+    "average": 6.67,
+    "count": 6,
     "tier": "S"
   },
   "basement": {
     "category": "community",
-    "average": 5.5,
-    "count": 4,
+    "average": 5.6,
+    "count": 5,
     "tier": "A"
   },
   "biohazard": {
     "category": "community",
-    "average": 3.25,
-    "count": 4,
-    "tier": "C"
+    "average": 4,
+    "count": 5,
+    "tier": "B"
   },
   "buttonbutton": {
     "category": "community",
-    "average": 1.75,
-    "count": 4,
+    "average": 1.6,
+    "count": 5,
     "tier": "F"
   },
   "cantilever": {
     "category": "community",
-    "average": 1.5,
-    "count": 4,
+    "average": 1.4,
+    "count": 5,
     "tier": "F"
   },
   "chute": {
     "category": "playable",
-    "average": 5.2,
-    "count": 5,
+    "average": 5.33,
+    "count": 6,
     "tier": "A"
   },
   "clock": {
@@ -67,62 +67,62 @@
   },
   "coliseum": {
     "category": "community",
-    "average": 3.25,
-    "count": 4,
+    "average": 3.4,
+    "count": 5,
     "tier": "C"
   },
   "commandeer": {
     "category": "community",
-    "average": 6,
-    "count": 3,
+    "average": 6.25,
+    "count": 4,
     "tier": "S"
   },
   "conduit": {
     "category": "community",
-    "average": 3.33,
-    "count": 3,
-    "tier": "C"
+    "average": 4,
+    "count": 4,
+    "tier": "B"
   },
   "corridor": {
     "category": "playable",
-    "average": 5.25,
-    "count": 4,
+    "average": 5.2,
+    "count": 5,
     "tier": "A"
   },
   "crimsonTowers": {
     "category": "community",
-    "average": 3.25,
-    "count": 4,
+    "average": 3.4,
+    "count": 5,
     "tier": "C"
   },
   "crossfire": {
     "category": "community",
-    "average": 5,
-    "count": 2,
-    "tier": "A"
+    "average": 4.67,
+    "count": 3,
+    "tier": "B"
   },
   "crouch": {
     "category": "training",
-    "average": 4.5,
-    "count": 2,
+    "average": 4,
+    "count": 3,
     "tier": "B"
   },
   "deflect": {
     "category": "training",
-    "average": 5,
-    "count": 2,
+    "average": 5.67,
+    "count": 3,
     "tier": "A"
   },
   "dojo": {
     "category": "community",
-    "average": 1.5,
-    "count": 2,
+    "average": 1.33,
+    "count": 3,
     "tier": "F"
   },
   "downpour": {
     "category": "community",
-    "average": 5.67,
-    "count": 6,
+    "average": 5,
+    "count": 7,
     "tier": "A"
   },
   "dripp": {
@@ -133,7 +133,7 @@
   },
   "factory": {
     "category": "unique",
-    "average": 5.5,
+    "average": 5.67,
     "count": 6,
     "tier": "A"
   },
@@ -157,14 +157,14 @@
   },
   "flocculation": {
     "category": "playable",
-    "average": 5.75,
-    "count": 4,
+    "average": 5.8,
+    "count": 5,
     "tier": "A"
   },
   "fortress": {
     "category": "community",
-    "average": 5.5,
-    "count": 2,
+    "average": 5.67,
+    "count": 3,
     "tier": "A"
   },
   "furnace": {
@@ -175,8 +175,8 @@
   },
   "gauntlet": {
     "category": "community",
-    "average": 4,
-    "count": 2,
+    "average": 4.33,
+    "count": 3,
     "tier": "B"
   },
   "gravitron": {
@@ -193,20 +193,20 @@
   },
   "highrise": {
     "category": "playable",
-    "average": 6.6,
+    "average": 5.4,
     "count": 5,
-    "tier": "S"
+    "tier": "A"
   },
   "hold": {
     "category": "training",
-    "average": 4,
-    "count": 2,
+    "average": 4.33,
+    "count": 3,
     "tier": "B"
   },
   "house": {
     "category": "community",
-    "average": 5,
-    "count": 4,
+    "average": 5.2,
+    "count": 5,
     "tier": "A"
   },
   "HVAC": {
@@ -223,9 +223,9 @@
   },
   "interferometer": {
     "category": "unique",
-    "average": 3,
+    "average": 2.83,
     "count": 6,
-    "tier": "C"
+    "tier": "D"
   },
   "intervals": {
     "category": "community",
@@ -235,189 +235,189 @@
   },
   "islands": {
     "category": "community",
-    "average": 6.33,
-    "count": 3,
-    "tier": "S"
+    "average": 4.2,
+    "count": 5,
+    "tier": "B"
   },
   "jump": {
     "category": "training",
-    "average": 3,
-    "count": 2,
+    "average": 3.33,
+    "count": 3,
     "tier": "C"
   },
   "labs": {
     "category": "playable",
-    "average": 5.5,
-    "count": 4,
+    "average": 5.8,
+    "count": 5,
     "tier": "A"
   },
   "lake": {
     "category": "community",
     "average": 5,
-    "count": 5,
+    "count": 6,
     "tier": "A"
   },
   "LaunchSite": {
     "category": "community",
-    "average": 6,
-    "count": 3,
+    "average": 6.25,
+    "count": 4,
     "tier": "S"
   },
   "lock": {
     "category": "playable",
-    "average": 6.6,
-    "count": 5,
+    "average": 6.67,
+    "count": 6,
     "tier": "S"
   },
   "matterWave": {
     "category": "training",
-    "average": 4,
-    "count": 2,
-    "tier": "B"
+    "average": 5,
+    "count": 3,
+    "tier": "A"
   },
   "missile": {
     "category": "training",
-    "average": 5,
-    "count": 2,
+    "average": 5.67,
+    "count": 3,
     "tier": "A"
   },
   "nailGun": {
     "category": "training",
-    "average": 2,
-    "count": 2,
-    "tier": "D"
+    "average": 3.67,
+    "count": 3,
+    "tier": "C"
   },
   "ngon": {
     "category": "community",
-    "average": 5.5,
-    "count": 4,
+    "average": 5.6,
+    "count": 5,
     "tier": "A"
   },
   "office": {
     "category": "playable",
-    "average": 5,
-    "count": 4,
+    "average": 5.4,
+    "count": 5,
     "tier": "A"
   },
   "pavilion": {
     "category": "playable",
-    "average": 5.5,
-    "count": 4,
+    "average": 5,
+    "count": 5,
     "tier": "A"
   },
   "perplex": {
     "category": "community",
-    "average": 6,
-    "count": 3,
+    "average": 6.25,
+    "count": 4,
     "tier": "S"
   },
   "reactor": {
     "category": "unique",
-    "average": 5.6,
+    "average": 5.4,
     "count": 5,
     "tier": "A"
   },
   "refinery": {
     "category": "playable",
-    "average": 5.67,
-    "count": 6,
+    "average": 5.86,
+    "count": 7,
     "tier": "A"
   },
   "reservoir": {
     "category": "unique",
-    "average": 3.4,
+    "average": 3.6,
     "count": 5,
     "tier": "C"
   },
   "rings": {
     "category": "community",
-    "average": 2.6,
-    "count": 5,
+    "average": 2.67,
+    "count": 6,
     "tier": "D"
   },
   "rooftops": {
     "category": "playable",
-    "average": 6,
-    "count": 4,
+    "average": 6.2,
+    "count": 5,
     "tier": "S"
   },
   "ruins": {
     "category": "community",
-    "average": 4,
-    "count": 3,
+    "average": 4.5,
+    "count": 4,
     "tier": "B"
   },
   "run": {
     "category": "community",
-    "average": 4.33,
-    "count": 3,
+    "average": 4.25,
+    "count": 4,
     "tier": "B"
   },
   "satellite": {
     "category": "playable",
-    "average": 6,
-    "count": 4,
+    "average": 6.2,
+    "count": 5,
     "tier": "S"
   },
   "sewers": {
     "category": "playable",
     "average": 5,
-    "count": 4,
+    "count": 5,
     "tier": "A"
   },
   "shipwreck": {
     "category": "community",
-    "average": 5.25,
-    "count": 4,
+    "average": 5.2,
+    "count": 5,
     "tier": "A"
   },
   "shotGun": {
     "category": "training",
-    "average": 4,
-    "count": 2,
-    "tier": "B"
+    "average": 5,
+    "count": 3,
+    "tier": "A"
   },
   "skyscrapers": {
     "category": "playable",
-    "average": 6.8,
-    "count": 5,
-    "tier": "S"
+    "average": 5.83,
+    "count": 6,
+    "tier": "A"
   },
   "soft": {
     "category": "community",
-    "average": 3.2,
-    "count": 5,
+    "average": 3,
+    "count": 6,
     "tier": "C"
   },
   "stack": {
     "category": "training",
-    "average": 1,
-    "count": 2,
+    "average": 1.67,
+    "count": 3,
     "tier": "F"
   },
   "staircase": {
     "category": "community",
-    "average": 3,
-    "count": 3,
+    "average": 3.25,
+    "count": 4,
     "tier": "C"
   },
   "stereoMadness": {
     "category": "community",
-    "average": 3,
-    "count": 5,
+    "average": 3.67,
+    "count": 6,
     "tier": "C"
   },
   "stronghold": {
     "category": "community",
-    "average": 7,
-    "count": 2,
-    "tier": "S"
+    "average": 5,
+    "count": 3,
+    "tier": "A"
   },
   "substructure": {
     "category": "playable",
-    "average": 6.5,
-    "count": 4,
-    "tier": "S"
+    "average": 5.4,
+    "count": 5,
+    "tier": "A"
   },
   "subway": {
     "category": "unique",
@@ -427,128 +427,128 @@
   },
   "superBall": {
     "category": "training",
-    "average": 4,
-    "count": 2,
-    "tier": "B"
-  },
-  "superstructure": {
-    "category": "playable",
-    "average": 5.75,
-    "count": 4,
-    "tier": "A"
-  },
-  "temple": {
-    "category": "community",
     "average": 5,
     "count": 3,
     "tier": "A"
   },
-  "terminal": {
-    "category": "community",
-    "average": 6,
-    "count": 3,
-    "tier": "S"
-  },
-  "testChamber": {
+  "superstructure": {
     "category": "playable",
     "average": 5.6,
     "count": 5,
     "tier": "A"
   },
-  "throw": {
-    "category": "training",
-    "average": 5,
-    "count": 2,
-    "tier": "A"
-  },
-  "throwAt": {
-    "category": "training",
-    "average": 5,
-    "count": 2,
-    "tier": "A"
-  },
-  "tlinat": {
-    "category": "community",
-    "average": 1,
-    "count": 4,
-    "tier": "F"
-  },
-  "towers": {
-    "category": "playable",
-    "average": 5.75,
-    "count": 4,
-    "tier": "A"
-  },
-  "trial": {
-    "category": "community",
-    "average": 3.5,
-    "count": 2,
-    "tier": "C"
-  },
-  "tunnel": {
-    "category": "community",
-    "average": 5,
-    "count": 2,
-    "tier": "A"
-  },
-  "turbine": {
-    "category": "community",
-    "average": 4,
-    "count": 3,
-    "tier": "B"
-  },
-  "unchartedCave": {
+  "temple": {
     "category": "community",
     "average": 5.25,
     "count": 4,
     "tier": "A"
   },
-  "underpass": {
-    "category": "community",
-    "average": 1.33,
-    "count": 3,
-    "tier": "F"
-  },
-  "vats": {
+  "terminal": {
     "category": "community",
     "average": 6,
-    "count": 3,
+    "count": 4,
     "tier": "S"
   },
-  "vents": {
+  "testChamber": {
+    "category": "playable",
+    "average": 5.83,
+    "count": 6,
+    "tier": "A"
+  },
+  "throw": {
+    "category": "training",
+    "average": 5.67,
+    "count": 3,
+    "tier": "A"
+  },
+  "throwAt": {
+    "category": "training",
+    "average": 5.67,
+    "count": 3,
+    "tier": "A"
+  },
+  "tlinat": {
     "category": "community",
-    "average": 4,
+    "average": 1,
+    "count": 5,
+    "tier": "F"
+  },
+  "towers": {
+    "category": "playable",
+    "average": 6,
+    "count": 5,
+    "tier": "S"
+  },
+  "trial": {
+    "category": "community",
+    "average": 3.67,
+    "count": 3,
+    "tier": "C"
+  },
+  "tunnel": {
+    "category": "community",
+    "average": 5.67,
+    "count": 3,
+    "tier": "A"
+  },
+  "turbine": {
+    "category": "community",
+    "average": 4.75,
     "count": 4,
     "tier": "B"
   },
-  "voltage": {
+  "unchartedCave": {
     "category": "community",
-    "average": 4.5,
-    "count": 2,
-    "tier": "B"
-  },
-  "walk": {
-    "category": "training",
-    "average": 5.5,
-    "count": 2,
-    "tier": "A"
-  },
-  "warehouse": {
-    "category": "playable",
-    "average": 5.2,
+    "average": 5.6,
     "count": 5,
     "tier": "A"
   },
-  "yingYang": {
+  "underpass": {
     "category": "community",
     "average": 1.25,
     "count": 4,
     "tier": "F"
   },
+  "vats": {
+    "category": "community",
+    "average": 6.25,
+    "count": 4,
+    "tier": "S"
+  },
+  "vents": {
+    "category": "community",
+    "average": 4.6,
+    "count": 5,
+    "tier": "B"
+  },
+  "voltage": {
+    "category": "community",
+    "average": 5.33,
+    "count": 3,
+    "tier": "A"
+  },
+  "walk": {
+    "category": "training",
+    "average": 6,
+    "count": 3,
+    "tier": "S"
+  },
+  "warehouse": {
+    "category": "playable",
+    "average": 5.5,
+    "count": 6,
+    "tier": "A"
+  },
+  "yingYang": {
+    "category": "community",
+    "average": 1.2,
+    "count": 5,
+    "tier": "F"
+  },
   "zenith": {
     "category": "community",
-    "average": 6,
-    "count": 5,
+    "average": 6.17,
+    "count": 6,
     "tier": "S"
   }
 }
