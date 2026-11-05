@@ -470,7 +470,7 @@
   "tlinat": {
     "category": "community",
     "average": 1,
-    "count": 5,
+    "count": 6,
     "tier": "F"
   },
   "towers": {
@@ -541,8 +541,8 @@
   },
   "yingYang": {
     "category": "community",
-    "average": 1.2,
-    "count": 5,
+    "average": 1.17,
+    "count": 6,
     "tier": "F"
   },
   "zenith": {
