@@ -37,8 +37,8 @@
   },
   "biohazard": {
     "category": "community",
-    "average": 3.86,
-    "count": 7,
+    "average": 3.88,
+    "count": 8,
     "tier": "C"
   },
   "buttonbutton": {
@@ -49,8 +49,8 @@
   },
   "cantilever": {
     "category": "community",
-    "average": 1.25,
-    "count": 8,
+    "average": 1.22,
+    "count": 9,
     "tier": "F"
   },
   "chute": {
@@ -133,14 +133,14 @@
   },
   "factory": {
     "category": "unique",
-    "average": 5.63,
-    "count": 8,
+    "average": 5.44,
+    "count": 9,
     "tier": "A"
   },
   "final": {
     "category": "unique",
-    "average": 6.38,
-    "count": 8,
+    "average": 6.5,
+    "count": 10,
     "tier": "S"
   },
   "fire": {
@@ -217,14 +217,14 @@
   },
   "initial": {
     "category": "unique",
-    "average": 6.13,
-    "count": 8,
+    "average": 6.22,
+    "count": 9,
     "tier": "S"
   },
   "interferometer": {
     "category": "unique",
-    "average": 2.88,
-    "count": 8,
+    "average": 2.89,
+    "count": 9,
     "tier": "D"
   },
   "intervals": {
@@ -313,8 +313,8 @@
   },
   "reactor": {
     "category": "unique",
-    "average": 5.57,
-    "count": 7,
+    "average": 5.5,
+    "count": 8,
     "tier": "A"
   },
   "refinery": {
@@ -325,8 +325,8 @@
   },
   "reservoir": {
     "category": "unique",
-    "average": 3.29,
-    "count": 7,
+    "average": 3.63,
+    "count": 8,
     "tier": "C"
   },
   "rings": {
@@ -421,8 +421,8 @@
   },
   "subway": {
     "category": "unique",
-    "average": 4.38,
-    "count": 8,
+    "average": 4.56,
+    "count": 9,
     "tier": "B"
   },
   "superBall": {
@@ -529,8 +529,8 @@
   },
   "walk": {
     "category": "training",
-    "average": 6,
-    "count": 3,
+    "average": 6.25,
+    "count": 4,
     "tier": "S"
   },
   "warehouse": {
