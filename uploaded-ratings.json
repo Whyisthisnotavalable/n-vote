@@ -5,9 +5,9 @@
     "description": "Battlefield specifically from Super Smash Bros. Ultimate",
     "size": 14120,
     "uploaded": 1794051031472,
-    "average": 4,
-    "count": 3,
-    "tier": "B"
+    "average": 3.25,
+    "count": 4,
+    "tier": "C"
   },
   "-P5_nY-wgvKHRuh8PHjP": {
     "name": "BossZone.js",
@@ -15,8 +15,8 @@
     "description": "My first map, a boss fight lvl. It’s pretty basic.",
     "size": 10197,
     "uploaded": 1793783116155,
-    "average": 2.67,
-    "count": 3,
+    "average": 2.25,
+    "count": 4,
     "tier": "D"
   },
   "-P5xwMShCtaQ1zc725bo": {
@@ -25,9 +25,9 @@
     "description": "Big Cargo Lift where you fight enemies on the way up, there's a key to activate a rapid delivery chute and skip the combat if you like",
     "size": 115636,
     "uploaded": 1794188081739,
-    "average": 5.29,
-    "count": 7,
-    "tier": "A"
+    "average": 4.75,
+    "count": 8,
+    "tier": "B"
   },
   "-P5brUs6VeXOMQ2wOBN5": {
     "name": "ChainAction _1_.js",
@@ -35,9 +35,9 @@
     "description": "Just a fun button game, can be a little buggy sometimes...",
     "size": 15925,
     "uploaded": 1793817706043,
-    "average": 3.2,
-    "count": 5,
-    "tier": "C"
+    "average": 2.83,
+    "count": 6,
+    "tier": "D"
   },
   "-P5r7SL3RHTh9KvzdPgw": {
     "name": "Epicenter.js",
@@ -45,8 +45,8 @@
     "description": "Base under attack",
     "size": 77873,
     "uploaded": 1794073810590,
-    "average": 2.33,
-    "count": 3,
+    "average": 2,
+    "count": 4,
     "tier": "D"
   },
   "-P5yoCnChmmGeQPkeVrJ": {
@@ -55,9 +55,9 @@
     "description": "“hard” tower map intended for no tech no field",
     "size": 22635,
     "uploaded": 1794202721561,
-    "average": 2,
-    "count": 1,
-    "tier": null
+    "average": 1.5,
+    "count": 2,
+    "tier": "F"
   },
   "-P5lUv9HQ3caR0G4eIeU": {
     "name": "grappler.js",
@@ -65,9 +65,9 @@
     "description": "A relatively short level where you are forced to use grappling hook. grappling hook's key combo is required for a section unless you have Eigenstate.",
     "size": 18955,
     "uploaded": 1793979298623,
-    "average": 4,
-    "count": 4,
-    "tier": "B"
+    "average": 3.4,
+    "count": 5,
+    "tier": "C"
   },
   "-P5h657cGXS2BJpidDeF": {
     "name": "gravitywell.js",
@@ -75,9 +75,9 @@
     "description": "short level i made to test the editor",
     "size": 35923,
     "uploaded": 1793905681044,
-    "average": 4.2,
-    "count": 5,
-    "tier": "B"
+    "average": 3.67,
+    "count": 6,
+    "tier": "C"
   },
   "-P65u8PyhDWhnLRJS43x": {
     "name": "Hanger.js",
@@ -86,8 +86,8 @@
     "size": 20135,
     "uploaded": 1794338494270,
     "average": 7,
-    "count": 1,
-    "tier": null
+    "count": 2,
+    "tier": "S"
   },
   "-P5xCS-GaV-Qiq4bHIh5": {
     "name": "intrusion.js",
@@ -95,9 +95,9 @@
     "description": "A short level I made to test some code bits, including level music. The level track was originally composed by me as a joke, then modified to fit (so please ignore the poor composition quality, lol). Unfortunately, some of the camera code broke in a recent level editor update, sorry about that!",
     "size": 36907,
     "uploaded": 1794175783094,
-    "average": 5,
-    "count": 4,
-    "tier": "A"
+    "average": 4.2,
+    "count": 5,
+    "tier": "B"
   },
   "-P5lU_dEluKfk2TzHWJA": {
     "name": "jumper _1_.js",
@@ -105,8 +105,8 @@
     "description": "This level is mostly parkour based. It is an obstacle based level where you activate buttons to unlock the rest of the level.",
     "size": 55754,
     "uploaded": 1793979210462,
-    "average": 2.5,
-    "count": 2,
+    "average": 2,
+    "count": 3,
     "tier": "D"
   },
   "-P5lotBl257-96mF4FbR": {
@@ -115,9 +115,9 @@
     "description": "JustClimb",
     "size": 33728,
     "uploaded": 1793984795506,
-    "average": 2.5,
-    "count": 2,
-    "tier": "D"
+    "average": 4,
+    "count": 3,
+    "tier": "B"
   },
   "-P60TXdSH4AlsskNzeYL": {
     "name": "Keyholes1.2.js",
@@ -125,9 +125,9 @@
     "description": "Short and sweet level showing off how keys work.",
     "size": 33390,
     "uploaded": 1794247371426,
-    "average": 2,
-    "count": 1,
-    "tier": null
+    "average": 1.5,
+    "count": 2,
+    "tier": "F"
   },
   "-P5f_IjYkTQx2DypyCX_": {
     "name": "Loot.js",
@@ -135,9 +135,9 @@
     "description": "Loot lol",
     "size": 12532,
     "uploaded": 1793880046979,
-    "average": 3.33,
-    "count": 3,
-    "tier": "C"
+    "average": 2.75,
+    "count": 4,
+    "tier": "D"
   },
   "-P5brOz16fqPTyB_OEpf": {
     "name": "mars.js",
@@ -145,9 +145,9 @@
     "description": "Lots of wind, definitely shifts parkour a lot",
     "size": 35715,
     "uploaded": 1793817681941,
-    "average": 4,
-    "count": 5,
-    "tier": "B"
+    "average": 3.29,
+    "count": 7,
+    "tier": "C"
   },
   "-P5dOTsuQsVWmMHRYEWO": {
     "name": "prison.js",
@@ -155,9 +155,9 @@
     "description": "Rather difficult, but I hope you found as much fun to play at as I did making it!",
     "size": 59523,
     "uploaded": 1793843392164,
-    "average": 4.5,
-    "count": 4,
-    "tier": "B"
+    "average": 3.67,
+    "count": 6,
+    "tier": "C"
   },
   "-P5brBIRnKBXn2xuyjUO": {
     "name": "Rathole _1_.js",
@@ -165,9 +165,9 @@
     "description": "First map I've made! Just a silly little random level",
     "size": 20782,
     "uploaded": 1793817626037,
-    "average": 4.5,
-    "count": 2,
-    "tier": "B"
+    "average": 3,
+    "count": 4,
+    "tier": "C"
   },
   "-P6-QWdo7x5wumMmOIBG": {
     "name": "skillpuzzle _1_.js",
@@ -175,9 +175,9 @@
     "description": "It's possible, it just is quite difficult.",
     "size": 27350,
     "uploaded": 1794229803770,
-    "average": null,
-    "count": 0,
-    "tier": null
+    "average": 1,
+    "count": 2,
+    "tier": "F"
   },
   "-P5y4NCYJnPGfCAYt9pN": {
     "name": "solidPortals.js",
@@ -185,9 +185,9 @@
     "description": "short map in an abandoned datacenter(?)",
     "size": 43920,
     "uploaded": 1794190443542,
-    "average": 5.25,
-    "count": 4,
-    "tier": "A"
+    "average": 3.83,
+    "count": 6,
+    "tier": "C"
   },
   "-P5brcUtq_eLMvM8i3oa": {
     "name": "spaceTimeRift _2_.js",
@@ -195,9 +195,9 @@
     "description": "Lots of portals, bottom left is my favorite. it's not actually as big as it looks",
     "size": 80512,
     "uploaded": 1793817741739,
-    "average": 5.2,
-    "count": 5,
-    "tier": "A"
+    "average": 4,
+    "count": 7,
+    "tier": "B"
   },
   "-P60KokQMzjXXmMlwiXK": {
     "name": "tether _4_.js",
@@ -205,9 +205,9 @@
     "description": "This map uses constraints a lot, most prominently in a cart you have to use to travel over slime. It's a little confusing but it's fun. be careful with the starting block, it sometimes likes to disappear",
     "size": 44074,
     "uploaded": 1794245086402,
-    "average": 6,
-    "count": 1,
-    "tier": null
+    "average": 2.67,
+    "count": 3,
+    "tier": "D"
   },
   "-P5b7TMwHV-127m6C6G9": {
     "name": "undercity _6_.js",
@@ -215,8 +215,8 @@
     "description": "STILL IN PROGRESS!! My first map, made with the level creator. It has a good amount of shortcuts and puzzles. Feedback is ENCOURAGED!",
     "size": 29061,
     "uploaded": 1793805379167,
-    "average": 4.86,
-    "count": 7,
+    "average": 4.22,
+    "count": 9,
     "tier": "B"
   }
 }
