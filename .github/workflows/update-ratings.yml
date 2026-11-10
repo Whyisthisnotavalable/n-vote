@@ -20,14 +20,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Build ratings.json
+      - name: Build ratings files
         run: node scripts/build-ratings.mjs
       - name: Commit if changed
         run: |
-          if [ -n "$(git status --porcelain ratings.json)" ]; then
+          if [ -n "$(git status --porcelain ratings.json uploaded-ratings.json)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add ratings.json
+            git add ratings.json uploaded-ratings.json
             git commit -m "Update ratings"
             git push
           fi
