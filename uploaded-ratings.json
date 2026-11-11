@@ -59,16 +59,6 @@
     "count": 2,
     "tier": "F"
   },
-  "-P5lUv9HQ3caR0G4eIeU": {
-    "name": "grappler.js",
-    "author": "Glowing Turtle",
-    "description": "A relatively short level where you are forced to use grappling hook. grappling hook's key combo is required for a section unless you have Eigenstate.",
-    "size": 18955,
-    "uploaded": 1793979298623,
-    "average": 3.4,
-    "count": 5,
-    "tier": "C"
-  },
   "-P5h657cGXS2BJpidDeF": {
     "name": "gravitywell.js",
     "author": "Remair Hayrwood",
@@ -178,6 +168,26 @@
     "average": 1,
     "count": 3,
     "tier": "F"
+  },
+  "-P6AwBtBasuOCfskNONd": {
+    "name": "slot.js",
+    "author": "ZqolRn yes",
+    "description": "gambling",
+    "size": 59078,
+    "uploaded": 1794422919037,
+    "average": 7,
+    "count": 1,
+    "tier": null
+  },
+  "-P6BRLNnAXINc8f32YmM": {
+    "name": "slums.js",
+    "author": "p2w “p2w terror” satnos",
+    "description": "weird weird map",
+    "size": 64919,
+    "uploaded": 1794431346362,
+    "average": 4,
+    "count": 1,
+    "tier": null
   },
   "-P5y4NCYJnPGfCAYt9pN": {
     "name": "solidPortals.js",
