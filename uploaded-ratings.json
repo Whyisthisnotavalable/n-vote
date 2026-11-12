@@ -5,8 +5,8 @@
     "description": "Battlefield specifically from Super Smash Bros. Ultimate",
     "size": 14120,
     "uploaded": 1794051031472,
-    "average": 3.25,
-    "count": 4,
+    "average": 3.4,
+    "count": 5,
     "tier": "C"
   },
   "-P5_nY-wgvKHRuh8PHjP": {
@@ -15,8 +15,8 @@
     "description": "My first map, a boss fight lvl. It’s pretty basic.",
     "size": 10197,
     "uploaded": 1793783116155,
-    "average": 2.25,
-    "count": 4,
+    "average": 2.2,
+    "count": 5,
     "tier": "D"
   },
   "-P5xwMShCtaQ1zc725bo": {
@@ -25,8 +25,8 @@
     "description": "Big Cargo Lift where you fight enemies on the way up, there's a key to activate a rapid delivery chute and skip the combat if you like",
     "size": 115636,
     "uploaded": 1794188081739,
-    "average": 4.9,
-    "count": 10,
+    "average": 4.91,
+    "count": 11,
     "tier": "B"
   },
   "-P5brUs6VeXOMQ2wOBN5": {
@@ -35,9 +35,19 @@
     "description": "Just a fun button game, can be a little buggy sometimes...",
     "size": 15925,
     "uploaded": 1793817706043,
-    "average": 2.83,
-    "count": 6,
-    "tier": "D"
+    "average": 3.14,
+    "count": 7,
+    "tier": "C"
+  },
+  "-P6CtG1CPGE05kR6Jazc": {
+    "name": "coolLevel3.js",
+    "author": "Toby SCHLUMPP",
+    "description": "A level including a bunch of features and stuff, starting off with a converbelt/elevator thingy for blocks, and ending in a little key and lock puzzle. It is a little mess though, but I hope you like it and feedback is encouraged.",
+    "size": 37503,
+    "uploaded": 1794455704057,
+    "average": 3,
+    "count": 1,
+    "tier": null
   },
   "-P5r7SL3RHTh9KvzdPgw": {
     "name": "Epicenter.js",
@@ -46,7 +56,7 @@
     "size": 77873,
     "uploaded": 1794073810590,
     "average": 2,
-    "count": 4,
+    "count": 5,
     "tier": "D"
   },
   "-P5yoCnChmmGeQPkeVrJ": {
@@ -55,8 +65,8 @@
     "description": "“hard” tower map intended for no tech no field",
     "size": 22635,
     "uploaded": 1794202721561,
-    "average": 3.33,
-    "count": 3,
+    "average": 3.6,
+    "count": 5,
     "tier": "C"
   },
   "-P5h657cGXS2BJpidDeF": {
@@ -65,8 +75,8 @@
     "description": "short level i made to test the editor",
     "size": 35923,
     "uploaded": 1793905681044,
-    "average": 3.67,
-    "count": 6,
+    "average": 3.86,
+    "count": 7,
     "tier": "C"
   },
   "-P65u8PyhDWhnLRJS43x": {
@@ -105,9 +115,9 @@
     "description": "JustClimb",
     "size": 33728,
     "uploaded": 1793984795506,
-    "average": 4,
-    "count": 3,
-    "tier": "B"
+    "average": 3.2,
+    "count": 5,
+    "tier": "C"
   },
   "-P60TXdSH4AlsskNzeYL": {
     "name": "Keyholes1.2.js",
@@ -115,9 +125,9 @@
     "description": "Short and sweet level showing off how keys work.",
     "size": 33390,
     "uploaded": 1794247371426,
-    "average": 1.5,
-    "count": 2,
-    "tier": "F"
+    "average": 2.8,
+    "count": 5,
+    "tier": "D"
   },
   "-P5f_IjYkTQx2DypyCX_": {
     "name": "Loot.js",
@@ -125,8 +135,8 @@
     "description": "Loot lol",
     "size": 12532,
     "uploaded": 1793880046979,
-    "average": 2.75,
-    "count": 4,
+    "average": 2.4,
+    "count": 5,
     "tier": "D"
   },
   "-P5brOz16fqPTyB_OEpf": {
@@ -135,8 +145,8 @@
     "description": "Lots of wind, definitely shifts parkour a lot",
     "size": 35715,
     "uploaded": 1793817681941,
-    "average": 3.29,
-    "count": 7,
+    "average": 3.25,
+    "count": 8,
     "tier": "C"
   },
   "-P5dOTsuQsVWmMHRYEWO": {
@@ -145,8 +155,8 @@
     "description": "Rather difficult, but I hope you found as much fun to play at as I did making it!",
     "size": 59523,
     "uploaded": 1793843392164,
-    "average": 3.67,
-    "count": 6,
+    "average": 3.71,
+    "count": 7,
     "tier": "C"
   },
   "-P5brBIRnKBXn2xuyjUO": {
@@ -166,7 +176,7 @@
     "size": 27350,
     "uploaded": 1794229803770,
     "average": 1,
-    "count": 4,
+    "count": 5,
     "tier": "F"
   },
   "-P6AwBtBasuOCfskNONd": {
@@ -175,8 +185,8 @@
     "description": "gambling",
     "size": 59078,
     "uploaded": 1794422919037,
-    "average": 7,
-    "count": 2,
+    "average": 6.67,
+    "count": 3,
     "tier": "S"
   },
   "-P6BRLNnAXINc8f32YmM": {
@@ -185,9 +195,9 @@
     "description": "weird weird map",
     "size": 64919,
     "uploaded": 1794431346362,
-    "average": 4,
-    "count": 1,
-    "tier": null
+    "average": 3.33,
+    "count": 3,
+    "tier": "C"
   },
   "-P5y4NCYJnPGfCAYt9pN": {
     "name": "solidPortals.js",
@@ -195,9 +205,9 @@
     "description": "short map in an abandoned datacenter(?)",
     "size": 43920,
     "uploaded": 1794190443542,
-    "average": 3.71,
-    "count": 7,
-    "tier": "C"
+    "average": 4.13,
+    "count": 8,
+    "tier": "B"
   },
   "-P5brcUtq_eLMvM8i3oa": {
     "name": "spaceTimeRift _2_.js",
@@ -225,8 +235,8 @@
     "description": null,
     "size": 60324,
     "uploaded": 1794363972699,
-    "average": 6.33,
-    "count": 3,
+    "average": 6.5,
+    "count": 4,
     "tier": "S"
   },
   "-P5b7TMwHV-127m6C6G9": {
@@ -238,5 +248,15 @@
     "average": 4.11,
     "count": 9,
     "tier": "B"
+  },
+  "-P6DL7p9UZ4Bn4CLtmeh": {
+    "name": "waitingroom.js",
+    "author": "Ethan Zhang",
+    "description": "[FIXED  again] WAITING ROOM, a short level I made :)",
+    "size": 14990,
+    "uploaded": 1794463272342,
+    "average": null,
+    "count": 0,
+    "tier": null
   }
 }
