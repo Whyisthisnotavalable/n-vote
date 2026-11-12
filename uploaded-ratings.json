@@ -25,8 +25,8 @@
     "description": "Big Cargo Lift where you fight enemies on the way up, there's a key to activate a rapid delivery chute and skip the combat if you like",
     "size": 115636,
     "uploaded": 1794188081739,
-    "average": 4.67,
-    "count": 9,
+    "average": 4.9,
+    "count": 10,
     "tier": "B"
   },
   "-P5brUs6VeXOMQ2wOBN5": {
@@ -55,9 +55,9 @@
     "description": "“hard” tower map intended for no tech no field",
     "size": 22635,
     "uploaded": 1794202721561,
-    "average": 1.5,
-    "count": 2,
-    "tier": "F"
+    "average": 3.33,
+    "count": 3,
+    "tier": "C"
   },
   "-P5h657cGXS2BJpidDeF": {
     "name": "gravitywell.js",
@@ -95,9 +95,9 @@
     "description": "This level is mostly parkour based. It is an obstacle based level where you activate buttons to unlock the rest of the level.",
     "size": 55754,
     "uploaded": 1793979210462,
-    "average": 2,
-    "count": 3,
-    "tier": "D"
+    "average": 1.75,
+    "count": 4,
+    "tier": "F"
   },
   "-P5lotBl257-96mF4FbR": {
     "name": "JustClimb.js",
@@ -166,7 +166,7 @@
     "size": 27350,
     "uploaded": 1794229803770,
     "average": 1,
-    "count": 3,
+    "count": 4,
     "tier": "F"
   },
   "-P6AwBtBasuOCfskNONd": {
@@ -176,8 +176,8 @@
     "size": 59078,
     "uploaded": 1794422919037,
     "average": 7,
-    "count": 1,
-    "tier": null
+    "count": 2,
+    "tier": "S"
   },
   "-P6BRLNnAXINc8f32YmM": {
     "name": "slums.js",
@@ -235,7 +235,7 @@
     "description": "STILL IN PROGRESS!! My first map, made with the level creator. It has a good amount of shortcuts and puzzles. Feedback is ENCOURAGED!",
     "size": 29061,
     "uploaded": 1793805379167,
-    "average": 4.22,
+    "average": 4.11,
     "count": 9,
     "tier": "B"
   }
