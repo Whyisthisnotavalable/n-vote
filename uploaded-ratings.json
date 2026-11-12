@@ -25,8 +25,8 @@
     "description": "Big Cargo Lift where you fight enemies on the way up, there's a key to activate a rapid delivery chute and skip the combat if you like",
     "size": 115636,
     "uploaded": 1794188081739,
-    "average": 4.91,
-    "count": 11,
+    "average": 4.92,
+    "count": 12,
     "tier": "B"
   },
   "-P5brUs6VeXOMQ2wOBN5": {
@@ -45,9 +45,9 @@
     "description": "A level including a bunch of features and stuff, starting off with a converbelt/elevator thingy for blocks, and ending in a little key and lock puzzle. It is a little mess though, but I hope you like it and feedback is encouraged.",
     "size": 37503,
     "uploaded": 1794455704057,
-    "average": 3,
-    "count": 1,
-    "tier": null
+    "average": 2.5,
+    "count": 2,
+    "tier": "D"
   },
   "-P5r7SL3RHTh9KvzdPgw": {
     "name": "Epicenter.js",
@@ -68,6 +68,16 @@
     "average": 3.6,
     "count": 5,
     "tier": "C"
+  },
+  "-P6G4nykrvEr-InIL50D": {
+    "name": "frequency.js",
+    "author": "TheOnlyWeedleFan",
+    "description": "My first 'proper' level, and a rather long one at that; it works better as a 'unique' level (like subway) if such a thing were to be implemented in the future. It is HIGHLY RECOMMENDED to play the level (either in-game or through test export) FIRST, BEFORE examining it in the editor.",
+    "size": 157239,
+    "uploaded": 1794509324386,
+    "average": 6,
+    "count": 1,
+    "tier": null
   },
   "-P5h657cGXS2BJpidDeF": {
     "name": "gravitywell.js",
@@ -185,9 +195,9 @@
     "description": "gambling",
     "size": 59078,
     "uploaded": 1794422919037,
-    "average": 6.67,
-    "count": 3,
-    "tier": "S"
+    "average": 5.8,
+    "count": 5,
+    "tier": "A"
   },
   "-P6BRLNnAXINc8f32YmM": {
     "name": "slums.js",
@@ -195,8 +205,8 @@
     "description": "weird weird map",
     "size": 64919,
     "uploaded": 1794431346362,
-    "average": 3.33,
-    "count": 3,
+    "average": 3.25,
+    "count": 4,
     "tier": "C"
   },
   "-P5y4NCYJnPGfCAYt9pN": {
@@ -235,8 +245,8 @@
     "description": null,
     "size": 60324,
     "uploaded": 1794363972699,
-    "average": 6.5,
-    "count": 4,
+    "average": 6.17,
+    "count": 6,
     "tier": "S"
   },
   "-P5b7TMwHV-127m6C6G9": {
@@ -255,8 +265,8 @@
     "description": "[FIXED  again] WAITING ROOM, a short level I made :)",
     "size": 14990,
     "uploaded": 1794463272342,
-    "average": null,
-    "count": 0,
+    "average": 3,
+    "count": 1,
     "tier": null
   }
 }
