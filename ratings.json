@@ -133,14 +133,14 @@
   },
   "factory": {
     "category": "unique",
-    "average": 5.94,
-    "count": 16,
-    "tier": "A"
+    "average": 6,
+    "count": 17,
+    "tier": "S"
   },
   "final": {
     "category": "unique",
-    "average": 6.18,
-    "count": 17,
+    "average": 6.17,
+    "count": 18,
     "tier": "S"
   },
   "fire": {
@@ -181,8 +181,8 @@
   },
   "gravitron": {
     "category": "playable",
-    "average": 5.14,
-    "count": 14,
+    "average": 5.2,
+    "count": 15,
     "tier": "A"
   },
   "heal": {
@@ -217,14 +217,14 @@
   },
   "initial": {
     "category": "unique",
-    "average": 5.93,
-    "count": 15,
+    "average": 5.94,
+    "count": 16,
     "tier": "A"
   },
   "interferometer": {
     "category": "unique",
-    "average": 3.38,
-    "count": 16,
+    "average": 3.41,
+    "count": 17,
     "tier": "C"
   },
   "intervals": {
@@ -313,8 +313,8 @@
   },
   "reactor": {
     "category": "unique",
-    "average": 5.43,
-    "count": 14,
+    "average": 5.53,
+    "count": 15,
     "tier": "A"
   },
   "refinery": {
@@ -325,8 +325,8 @@
   },
   "reservoir": {
     "category": "unique",
-    "average": 3.93,
-    "count": 14,
+    "average": 3.87,
+    "count": 15,
     "tier": "C"
   },
   "rings": {
@@ -337,8 +337,8 @@
   },
   "rooftops": {
     "category": "playable",
-    "average": 6,
-    "count": 10,
+    "average": 6.09,
+    "count": 11,
     "tier": "S"
   },
   "ruins": {
@@ -355,8 +355,8 @@
   },
   "satellite": {
     "category": "playable",
-    "average": 6.6,
-    "count": 10,
+    "average": 6.64,
+    "count": 11,
     "tier": "S"
   },
   "sewers": {
@@ -379,8 +379,8 @@
   },
   "skyscrapers": {
     "category": "playable",
-    "average": 6.09,
-    "count": 11,
+    "average": 6.17,
+    "count": 12,
     "tier": "S"
   },
   "soft": {
@@ -397,8 +397,8 @@
   },
   "staircase": {
     "category": "community",
-    "average": 2.82,
-    "count": 11,
+    "average": 2.75,
+    "count": 12,
     "tier": "D"
   },
   "stereoMadness": {
@@ -409,8 +409,8 @@
   },
   "stronghold": {
     "category": "community",
-    "average": 6,
-    "count": 8,
+    "average": 6.11,
+    "count": 9,
     "tier": "S"
   },
   "substructure": {
@@ -421,9 +421,9 @@
   },
   "subway": {
     "category": "unique",
-    "average": 4.93,
-    "count": 15,
-    "tier": "B"
+    "average": 5,
+    "count": 16,
+    "tier": "A"
   },
   "superBall": {
     "category": "training",
@@ -452,7 +452,7 @@
   "testChamber": {
     "category": "playable",
     "average": 6,
-    "count": 12,
+    "count": 13,
     "tier": "S"
   },
   "throw": {
@@ -469,8 +469,8 @@
   },
   "tlinat": {
     "category": "community",
-    "average": 1.77,
-    "count": 13,
+    "average": 1.71,
+    "count": 14,
     "tier": "F"
   },
   "towers": {
@@ -523,9 +523,9 @@
   },
   "voltage": {
     "category": "community",
-    "average": 5,
-    "count": 7,
-    "tier": "A"
+    "average": 4.88,
+    "count": 8,
+    "tier": "B"
   },
   "walk": {
     "category": "training",
@@ -541,8 +541,8 @@
   },
   "yingYang": {
     "category": "community",
-    "average": 1.53,
-    "count": 15,
+    "average": 1.5,
+    "count": 16,
     "tier": "F"
   },
   "zenith": {

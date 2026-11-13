@@ -39,15 +39,25 @@
     "count": 7,
     "tier": "C"
   },
+  "-P6GYUdEBneZysFUwlve": {
+    "name": "choice.js",
+    "author": "meep",
+    "description": "My first map, a vanilla-styled map featuring a choice between an arena room and a short parkour course. Designed with pacifism in mind.   Has a small secret!",
+    "size": 50546,
+    "uploaded": 1794517105391,
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
   "-P6CtG1CPGE05kR6Jazc": {
     "name": "coolLevel3.js",
     "author": "Toby SCHLUMPP",
     "description": "A level including a bunch of features and stuff, starting off with a converbelt/elevator thingy for blocks, and ending in a little key and lock puzzle. It is a little mess though, but I hope you like it and feedback is encouraged.",
     "size": 37503,
     "uploaded": 1794455704057,
-    "average": 2.5,
-    "count": 2,
-    "tier": "D"
+    "average": 4,
+    "count": 3,
+    "tier": "B"
   },
   "-P5r7SL3RHTh9KvzdPgw": {
     "name": "Epicenter.js",
@@ -75,9 +85,9 @@
     "description": "My first 'proper' level, and a rather long one at that; it works better as a 'unique' level (like subway) if such a thing were to be implemented in the future. It is HIGHLY RECOMMENDED to play the level (either in-game or through test export) FIRST, BEFORE examining it in the editor.",
     "size": 157239,
     "uploaded": 1794509324386,
-    "average": 6,
-    "count": 1,
-    "tier": null
+    "average": 5,
+    "count": 3,
+    "tier": "A"
   },
   "-P5h657cGXS2BJpidDeF": {
     "name": "gravitywell.js",
@@ -98,6 +108,16 @@
     "average": 5,
     "count": 3,
     "tier": "A"
+  },
+  "-P6H69Jm6Y2bcia0EeGp": {
+    "name": "help.js",
+    "author": "Bryce HAIR",
+    "description": "try beating with out cheating",
+    "size": 79516,
+    "uploaded": 1794526455601,
+    "average": 4,
+    "count": 2,
+    "tier": "B"
   },
   "-P5xCS-GaV-Qiq4bHIh5": {
     "name": "intrusion.js",
@@ -186,7 +206,7 @@
     "size": 27350,
     "uploaded": 1794229803770,
     "average": 1,
-    "count": 5,
+    "count": 6,
     "tier": "F"
   },
   "-P6AwBtBasuOCfskNONd": {
@@ -195,8 +215,8 @@
     "description": "gambling",
     "size": 59078,
     "uploaded": 1794422919037,
-    "average": 5.8,
-    "count": 5,
+    "average": 5.33,
+    "count": 6,
     "tier": "A"
   },
   "-P6BRLNnAXINc8f32YmM": {
@@ -215,8 +235,8 @@
     "description": "short map in an abandoned datacenter(?)",
     "size": 43920,
     "uploaded": 1794190443542,
-    "average": 4.13,
-    "count": 8,
+    "average": 4.57,
+    "count": 7,
     "tier": "B"
   },
   "-P5brcUtq_eLMvM8i3oa": {
