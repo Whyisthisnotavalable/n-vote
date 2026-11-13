@@ -95,8 +95,8 @@
     "description": "My first 'proper' level, and a rather long one at that; it works better as a 'unique' level (like subway) if such a thing were to be implemented in the future. It is HIGHLY RECOMMENDED to play the level (either in-game or through test export) FIRST, BEFORE examining it in the editor.",
     "size": 157239,
     "uploaded": 1794509324386,
-    "average": 5,
-    "count": 3,
+    "average": 5.25,
+    "count": 4,
     "tier": "A"
   },
   "-P5h657cGXS2BJpidDeF": {
@@ -128,6 +128,16 @@
     "average": 4,
     "count": 2,
     "tier": "B"
+  },
+  "-P6KXNrqYHwo34Sc_lcP": {
+    "name": "HexaGon.js",
+    "author": "Chase Edwards",
+    "description": "First basic level",
+    "size": 24838,
+    "uploaded": 1794583924355,
+    "average": null,
+    "count": 0,
+    "tier": null
   },
   "-P5xCS-GaV-Qiq4bHIh5": {
     "name": "intrusion.js",

@@ -37,9 +37,9 @@
   },
   "biohazard": {
     "category": "community",
-    "average": 3.92,
-    "count": 13,
-    "tier": "C"
+    "average": 4.14,
+    "count": 14,
+    "tier": "B"
   },
   "buttonbutton": {
     "category": "community",
@@ -355,8 +355,8 @@
   },
   "satellite": {
     "category": "playable",
-    "average": 6.67,
-    "count": 12,
+    "average": 6.69,
+    "count": 13,
     "tier": "S"
   },
   "sewers": {
