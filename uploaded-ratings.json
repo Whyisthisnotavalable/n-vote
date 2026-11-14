@@ -145,8 +145,8 @@
     "description": "try beating with out cheating",
     "size": 79516,
     "uploaded": 1794526455601,
-    "average": 4,
-    "count": 2,
+    "average": 4.33,
+    "count": 3,
     "tier": "B"
   },
   "-P6KXNrqYHwo34Sc_lcP": {
@@ -208,6 +208,16 @@
     "average": 2.17,
     "count": 6,
     "tier": "D"
+  },
+  "-P6ONXO5Pv_7UiU-DGDN": {
+    "name": "Loss0f0xygen.js",
+    "author": "Green Boy",
+    "description": "this strange rain has flooded the world. make sure not to drown! (also this is my first level)",
+    "size": 113108,
+    "uploaded": 1794648450785,
+    "average": 6,
+    "count": 2,
+    "tier": "S"
   },
   "-P5brOz16fqPTyB_OEpf": {
     "name": "mars.js",
