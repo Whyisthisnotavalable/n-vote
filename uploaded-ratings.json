@@ -55,8 +55,8 @@
     "description": "My first map, a vanilla-styled map featuring a choice between an arena room and a short parkour course. Designed with pacifism in mind.   Has a small secret!",
     "size": 50546,
     "uploaded": 1794517105391,
-    "average": null,
-    "count": 0,
+    "average": 5,
+    "count": 1,
     "tier": null
   },
   "-P6M2SU2hZ2GgyMnkLTF": {
@@ -65,9 +65,9 @@
     "description": "A spiral of puzzles challenging even the skilled",
     "size": 98693,
     "uploaded": 1794609371222,
-    "average": 7,
-    "count": 1,
-    "tier": null
+    "average": 4,
+    "count": 2,
+    "tier": "B"
   },
   "-P6CtG1CPGE05kR6Jazc": {
     "name": "coolLevel3.js",
@@ -105,9 +105,9 @@
     "description": "Getting over it but in n-gon",
     "size": 142767,
     "uploaded": 1794596842479,
-    "average": 6,
-    "count": 4,
-    "tier": "S"
+    "average": 5,
+    "count": 5,
+    "tier": "A"
   },
   "-P6G4nykrvEr-InIL50D": {
     "name": "frequency.js",
@@ -155,8 +155,8 @@
     "description": "First basic level",
     "size": 24838,
     "uploaded": 1794583924355,
-    "average": null,
-    "count": 0,
+    "average": 3,
+    "count": 1,
     "tier": null
   },
   "-P5xCS-GaV-Qiq4bHIh5": {
@@ -205,8 +205,8 @@
     "description": "Loot lol",
     "size": 12532,
     "uploaded": 1793880046979,
-    "average": 2.4,
-    "count": 5,
+    "average": 2.17,
+    "count": 6,
     "tier": "D"
   },
   "-P5brOz16fqPTyB_OEpf": {
@@ -245,8 +245,8 @@
     "description": "It's possible, it just is quite difficult.",
     "size": 27350,
     "uploaded": 1794229803770,
-    "average": 1,
-    "count": 6,
+    "average": 1.14,
+    "count": 7,
     "tier": "F"
   },
   "-P6AwBtBasuOCfskNONd": {

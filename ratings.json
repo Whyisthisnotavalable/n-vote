@@ -43,8 +43,8 @@
   },
   "buttonbutton": {
     "category": "community",
-    "average": 2.38,
-    "count": 13,
+    "average": 2.29,
+    "count": 14,
     "tier": "D"
   },
   "cantilever": {
@@ -223,8 +223,8 @@
   },
   "interferometer": {
     "category": "unique",
-    "average": 3.58,
-    "count": 19,
+    "average": 3.55,
+    "count": 20,
     "tier": "C"
   },
   "intervals": {
@@ -313,8 +313,8 @@
   },
   "reactor": {
     "category": "unique",
-    "average": 5.65,
-    "count": 17,
+    "average": 5.67,
+    "count": 18,
     "tier": "A"
   },
   "refinery": {
@@ -325,9 +325,9 @@
   },
   "reservoir": {
     "category": "unique",
-    "average": 3.94,
-    "count": 17,
-    "tier": "C"
+    "average": 4,
+    "count": 18,
+    "tier": "B"
   },
   "rings": {
     "category": "community",
@@ -421,8 +421,8 @@
   },
   "subway": {
     "category": "unique",
-    "average": 5.11,
-    "count": 18,
+    "average": 5.21,
+    "count": 19,
     "tier": "A"
   },
   "superBall": {
