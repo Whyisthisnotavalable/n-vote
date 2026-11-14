@@ -35,9 +35,9 @@
     "description": "Big Cargo Lift where you fight enemies on the way up, there's a key to activate a rapid delivery chute and skip the combat if you like",
     "size": 115636,
     "uploaded": 1794188081739,
-    "average": 4.92,
-    "count": 12,
-    "tier": "B"
+    "average": 5,
+    "count": 13,
+    "tier": "A"
   },
   "-P5brUs6VeXOMQ2wOBN5": {
     "name": "ChainAction _1_.js",
@@ -55,9 +55,9 @@
     "description": "My first map, a vanilla-styled map featuring a choice between an arena room and a short parkour course. Designed with pacifism in mind.   Has a small secret!",
     "size": 50546,
     "uploaded": 1794517105391,
-    "average": 5,
-    "count": 1,
-    "tier": null
+    "average": 5.5,
+    "count": 2,
+    "tier": "A"
   },
   "-P6M2SU2hZ2GgyMnkLTF": {
     "name": "convolve.js",
@@ -195,7 +195,7 @@
     "description": "Short and sweet level showing off how keys work.",
     "size": 33390,
     "uploaded": 1794247371426,
-    "average": 2.8,
+    "average": 2.4,
     "count": 5,
     "tier": "D"
   },
@@ -215,7 +215,7 @@
     "description": "this strange rain has flooded the world. make sure not to drown! (also this is my first level)",
     "size": 113108,
     "uploaded": 1794648450785,
-    "average": 5.33,
+    "average": 5,
     "count": 3,
     "tier": "A"
   },
