@@ -33,6 +33,7 @@ async function summarizeAll(ids) {
 }
 
 const byName = (a, b) => a.localeCompare(b, "en", { sensitivity: "base" });
+
 const maps = (await getJson("mapList")) || {};
 const mapIds = Object.keys(maps).sort(byName);
 if (!mapIds.length) throw new Error("mapList is empty; refusing to overwrite ratings.json");
@@ -40,13 +41,14 @@ const mapStats = await summarizeAll(mapIds);
 const official = Object.fromEntries(mapIds.map((id) => [id, { category: maps[id], ...mapStats[id] }]));
 
 const files = (await getJson("files")) || {};
+const aliases = (await getJson("aliases")) || {};
 const fileIds = Object.keys(files).sort((a, b) => byName(files[a].name || "", files[b].name || "") || a.localeCompare(b));
 const fileStats = await summarizeAll(fileIds);
 const uploaded = Object.fromEntries(fileIds.map((id) => {
   const f = files[id];
   return [id, {
     name: f.name,
-    author: f.author,
+    author: aliases[f.uid] || null,
     description: f.description || null,
     size: f.size,
     uploaded: f.uploaded,
