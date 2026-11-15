@@ -46,7 +46,8 @@ const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({
 const fmtSize = (n) => (n < 1024 ? `${n} B` : `${(n / 1024).toFixed(1)} KB`);
 const isUp = (id) => id in state.files;
 const titleOf = (id) => (isUp(id) ? state.files[id].name.replace(/\.js$/i, "") : id);
-const aliasOf = (uid) => state.aliases[uid] || "unnamed";
+
+const aliasOf = (uid) => state.aliases[uid] || "Anonymous";
 const onSite = () => window.location.href == "https://whyisthisnotavalable.github.io/n-vote/";
 
 function setStatus(msg, isError = false) {
@@ -116,7 +117,7 @@ function card(id) {
 	const date = up && f.uploaded ? new Date(f.uploaded).toLocaleDateString() : "";
 	const sub = up ? `by ${esc(aliasOf(f.uid))} · ${fmtSize(f.size)}${date ? " · " + date : ""}` : esc(state.maps[id]);
 	const canDelete = up && state.user && (f.uid === state.user.uid || state.admin);
-	const actions = `<button type="button" data-cm="${id}">Comments</button>` + (f ? `<button type="button" data-dl="${id}">Download (${fmtSize(f.size)})</button>` : "") + (canDelete ? `<button type="button" class="danger" data-del="${id}">Delete</button>` : "");
+	const actions = `<button type="button" data-cm="${id}">Comments</button>` + (f ? `<button type="button" data-dl="${id}" title="File size: ${fmtSize(f.size)}">Download</button>` : "") + (canDelete ? `<button type="button" class="danger" data-del="${id}">Delete</button>` : "");
 	return `<article class="card">
 	<header><div><h2>${title}</h2><span class="cat">${sub}</span></div>${tierHtml}</header>
 	${up && f.description ? `<p class="desc">${esc(f.description)}</p>` : ""}
@@ -212,8 +213,8 @@ async function uploadFile() {
 	const text = await f.text();
 	if (!text.length) return setFileStatus("That file is empty.", true);
 	if (text.length > maxCharacters) return setFileStatus(`File is too large (limit ${maxCharacters / 1000} KB).`, true);
-	const target = $("target")?.value || "";
-	if (target && !state.admin) return setFileStatus("Only richard can upload files for official maps.", true);
+	const target = $("target")?.value || ""; // this menu only exists for admins
+	if (target && !state.admin) return setFileStatus("Only the owner can upload files for official maps.", true);
 	$("uploadBtn").disabled = true;
 	try {
 		if (target) {
@@ -299,6 +300,7 @@ async function deleteFile(id) {
 }
 
 const aliasOk = /^[A-Za-z0-9][A-Za-z0-9_ -]{0,22}[A-Za-z0-9]$/;
+
 function setAliasStatus(msg, isError = false) {
 	const el = $("aliasStatus");
 	el.textContent = msg;
