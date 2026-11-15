@@ -3,7 +3,7 @@ import {
 	getAuth, onAuthStateChanged, signInWithPopup, GoogleAuthProvider, signOut
 } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
 import {
-	getDatabase, ref, get, set, remove, onValue, update, push, serverTimestamp
+	getDatabase, ref, get, set, remove, onValue, update, push, serverTimestamp, query, limitToLast
 } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-database.js";
 //hi pusheen
 const firebaseConfig = {
@@ -16,12 +16,13 @@ const firebaseConfig = {
 	appId: "1:1092229592102:web:eff45d7f06586e0ae5e2e7",
 	measurementId: "G-CE3KZW4DX6"
 };
+
 const minVotes = 2;
 const tiers = [
 	{ name: "S", min: 6 }, { name: "A", min: 5 }, { name: "B", min: 4 },
 	{ name: "C", min: 3 }, { name: "D", min: 2 }, { name: "F", min: 0 }
 ];
-const maxChar = 200000;
+const maxCharacters = 200000;
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getDatabase(app);
@@ -31,18 +32,22 @@ const state = {
 	mapFiles: {},
 	files: {},
 	ratings: {},
+	aliases: {},
 	cat: "all",
 	q: "",
 	sort: "name",
 	user: null,
 	admin: false
 };
+
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({
 	"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
 }[c]));
 const fmtSize = (n) => (n < 1024 ? `${n} B` : `${(n / 1024).toFixed(1)} KB`);
 const isUp = (id) => id in state.files;
 const titleOf = (id) => (isUp(id) ? state.files[id].name.replace(/\.js$/i, "") : id);
+const aliasOf = (uid) => state.aliases[uid] || "unnamed";
+const onSite = () => window.location.href == "https://whyisthisnotavalable.github.io/n-vote/";
 
 function setStatus(msg, isError = false) {
 	const el = $("status");
@@ -109,9 +114,9 @@ function card(id) {
 		notches += `<button type="button" class="${cls}" data-map="${id}" data-val="${n}" aria-pressed="${n === mine}" aria-label="Rate ${title} ${n} out of 7" title="${n} / 7">★</button>`;
 	}
 	const date = up && f.uploaded ? new Date(f.uploaded).toLocaleDateString() : "";
-	const sub = up ? `by ${esc(f.author)} · ${fmtSize(f.size)}${date ? " · " + date : ""}` : esc(state.maps[id]);
+	const sub = up ? `by ${esc(aliasOf(f.uid))} · ${fmtSize(f.size)}${date ? " · " + date : ""}` : esc(state.maps[id]);
 	const canDelete = up && state.user && (f.uid === state.user.uid || state.admin);
-	const actions = (f ? `<button type="button" data-dl="${id}">Download (${fmtSize(f.size)})</button>` : "") + (canDelete ? `<button type="button" class="danger" data-del="${id}">Delete</button>` : "");
+	const actions = `<button type="button" data-cm="${id}">Comments</button>` + (f ? `<button type="button" data-dl="${id}">Download (${fmtSize(f.size)})</button>` : "") + (canDelete ? `<button type="button" class="danger" data-del="${id}">Delete</button>` : "");
 	return `<article class="card">
 	<header><div><h2>${title}</h2><span class="cat">${sub}</span></div>${tierHtml}</header>
 	${up && f.description ? `<p class="desc">${esc(f.description)}</p>` : ""}
@@ -152,12 +157,17 @@ function renderCats() {
 	$("cats").innerHTML = cats.map((c) => `<button type="button" data-cat="${c}" aria-pressed="${c === state.cat}">${label(c)}</button>`).join("");
 }
 
-let targetsKey = "";
+function updateWho() {
+	if (!onSite()) return;
+	const u = state.user;
+	$("aliasBtn").hidden = !u;
+	$("who").textContent = !u ? "Sign in to rate maps" : (state.aliases[u.uid] || "No nickname yet") + (state.admin ? " (admin)" : "");
+}
 
+let targetsKey = "";
 function renderUpload() {
 	$("upload").hidden = !state.user;
 	$("uploadHint").hidden = !!state.user;
-	// the "Upload as" menu only exists for admins; for everyone else it is never put on the page
 	const key = state.admin ? "a:" + Object.keys(state.maps).join(",") : "";
 	if (key === targetsKey) return;
 	targetsKey = key;
@@ -165,8 +175,8 @@ function renderUpload() {
 		sensitivity: "base"
 	})).map((id) => `<option value="${esc(id)}">Official map: ${esc(id)}</option>`).join("") + `</select></label>` : "";
 }
-const rateSubs = {};
 
+const rateSubs = {};
 function watchRatings(id) {
 	if (rateSubs[id]) return;
 	rateSubs[id] = onValue(ref(db, `ratings/${id}`), (s) => {
@@ -174,6 +184,7 @@ function watchRatings(id) {
 		scheduleRender();
 	}, (err) => setStatus(`Could not load ratings: ${err.message}`, true));
 }
+
 function unwatchRatings(id) {
 	rateSubs[id]();
 	delete rateSubs[id];
@@ -194,14 +205,15 @@ async function vote(mapId, value) {
 }
 async function uploadFile() {
 	if (!state.user) return setFileStatus("Sign in with Google to upload.", true);
+	if (!state.aliases[state.user.uid]) return setFileStatus("Set a nickname first (the Nickname button at the top).", true);
 	const f = $("file").files[0];
 	if (!f) return setFileStatus("Choose a .js file first.", true);
 	if (!/\.js$/i.test(f.name)) return setFileStatus("Only .js files are allowed.", true);
 	const text = await f.text();
 	if (!text.length) return setFileStatus("That file is empty.", true);
-	if (text.length > maxChar) return setFileStatus(`File is too large (limit ${maxChar / 1000} KB).`, true);
+	if (text.length > maxCharacters) return setFileStatus(`File is too large (limit ${maxCharacters / 1000} KB).`, true);
 	const target = $("target")?.value || "";
-	if (target && !state.admin) return setFileStatus("Only the owner can upload files for official maps.", true);
+	if (target && !state.admin) return setFileStatus("Only richard can upload files for official maps.", true);
 	$("uploadBtn").disabled = true;
 	try {
 		if (target) {
@@ -225,7 +237,6 @@ async function uploadFile() {
 				name,
 				size: text.length,
 				uid: state.user.uid,
-				author: (state.user.displayName || "Anonymous").slice(0, 60),
 				uploaded: serverTimestamp()
 			};
 			if (desc) meta.description = desc;
@@ -253,7 +264,6 @@ async function downloadFile(id) {
 	try {
 		const snap = await get(ref(db, `${up ? "fileData" : "mapFileData"}/${id}`));
 		if (!snap.exists()) return setStatus("That file no longer exists.", true);
-		// handed to the browser as a plain-text download; never executed
 		const blob = new Blob([snap.val().text], {
 			type: "text/plain"
 		});
@@ -275,7 +285,10 @@ async function deleteFile(id) {
 		[`files/${id}`]: null,
 		[`fileData/${id}`]: null
 	};
-	if (state.admin) updates[`ratings/${id}`] = null;
+	if (state.admin) {
+		updates[`ratings/${id}`] = null;
+		updates[`comments/${id}`] = null;
+	}
 	try {
 		await update(ref(db), updates);
 		setStatus("Deleted.");
@@ -284,13 +297,149 @@ async function deleteFile(id) {
 		setStatus(`Couldn’t delete: ${err.message}`, true);
 	}
 }
+
+const aliasOk = /^[A-Za-z0-9][A-Za-z0-9_ -]{0,22}[A-Za-z0-9]$/;
+function setAliasStatus(msg, isError = false) {
+	const el = $("aliasStatus");
+	el.textContent = msg;
+	el.classList.toggle("error", isError);
+}
+async function saveAlias() {
+	if (!state.user) return;
+	const name = $("aliasInput").value.trim().replace(/\s+/g, " ");
+	if (!aliasOk.test(name)) return setAliasStatus("Use 2–24 characters: letters, numbers, spaces, - and _. Start and end with a letter or number.", true);
+	const uid = state.user.uid;
+	const key = name.toLowerCase();
+	const oldKey = (state.aliases[uid] || "").toLowerCase();
+	$("aliasSave").disabled = true;
+	try {
+		try {
+			await set(ref(db, `aliasTaken/${key}`), uid);
+		}
+		catch (err) {
+			return setAliasStatus("That nickname is taken or not allowed. Try another.", true);
+		}
+		try {
+			await set(ref(db, `aliases/${uid}`), name);
+		}
+		catch (err) {
+			if (key !== oldKey) remove(ref(db, `aliasTaken/${key}`)).catch(() => {});
+			return setAliasStatus(`Couldn’t save: ${err.message}`, true);
+		}
+		if (oldKey && oldKey !== key) remove(ref(db, `aliasTaken/${oldKey}`)).catch(() => {});
+		$("aliasDialog").close();
+		setStatus(`Your nickname is now ${name}.`);
+	}
+	finally {
+		$("aliasSave").disabled = false;
+	}
+}
+$("aliasBtn").addEventListener("click", () => {
+	$("aliasInput").value = state.aliases[state.user.uid] || "";
+	setAliasStatus("");
+	$("aliasDialog").showModal();
+});
+$("aliasClose").addEventListener("click", () => $("aliasDialog").close());
+$("aliasSave").addEventListener("click", saveAlias);
+$("aliasInput").addEventListener("keydown", (e) => {
+	if (e.key === "Enter") saveAlias();
+});
+
+const cm = {
+	id: null,
+	unsub: null,
+	list: {}
+};
+
+function setCommentStatus(msg, isError = false) {
+	const el = $("commentStatus");
+	el.textContent = msg;
+	el.classList.toggle("error", isError);
+}
+
+function renderComments() {
+	if (!cm.id) return;
+	const list = Object.entries(cm.list).map(([id, c]) => ({
+		id,
+		...c
+	})).sort((a, b) => (a.time || 0) - (b.time || 0));
+	$("commentList").innerHTML = list.length ? list.map((c) => {
+		const canDel = state.user && (c.uid === state.user.uid || state.admin);
+		const when = c.time ? new Date(c.time).toLocaleString() : "";
+		return `<div class="comment"><div class="meta"><span><b>${esc(aliasOf(c.uid))}</b> · ${esc(when)}</span>${canDel ? `<button type="button" data-cdel="${esc(c.id)}">Delete</button>` : ""}</div><p>${esc(c.text)}</p></div>`;
+	}).join("") : `<p class="status">No comments yet.</p>`;
+	const hasAlias = !!state.user && !!state.aliases[state.user.uid];
+	$("commentForm").hidden = !hasAlias;
+	$("commentHint").hidden = hasAlias;
+	$("commentHint").textContent = state.user ? "Set a nickname (top right) to comment." : "Sign in with Google to comment.";
+}
+
+function closeCommentsSub() {
+	if (cm.unsub) cm.unsub();
+	cm.unsub = null;
+	cm.id = null;
+}
+
+function openComments(id) {
+	closeCommentsSub();
+	cm.id = id;
+	cm.list = {};
+	$("commentTitle").textContent = `Comments: ${titleOf(id)}`;
+	setCommentStatus("");
+	renderComments();
+	cm.unsub = onValue(query(ref(db, `comments/${id}`), limitToLast(100)), (s) => {
+		cm.list = s.val() || {};
+		renderComments();
+		$("commentList").scrollTop = $("commentList").scrollHeight;
+	}, (err) => setCommentStatus(`Could not load comments: ${err.message}`, true));
+	$("commentsDialog").showModal();
+}
+async function postComment() {
+	if (!state.user || !cm.id) return;
+	const text = $("commentText").value.trim();
+	if (!text) return;
+	if (text.length > 500) return setCommentStatus("Comments can be up to 500 characters.", true);
+	$("commentPost").disabled = true;
+	try {
+		const cid = push(ref(db, `comments/${cm.id}`)).key;
+		await set(ref(db, `comments/${cm.id}/${cid}`), {
+			uid: state.user.uid,
+			text,
+			time: serverTimestamp()
+		});
+		$("commentText").value = "";
+		setCommentStatus("");
+	}
+	catch (err) {
+		setCommentStatus(`Couldn’t post: ${err.message}`, true);
+	}
+	finally {
+		$("commentPost").disabled = false;
+	}
+}
+$("commentPost").addEventListener("click", postComment);
+$("commentsClose").addEventListener("click", () => $("commentsDialog").close());
+$("commentsDialog").addEventListener("close", closeCommentsSub);
+$("commentList").addEventListener("click", async (e) => {
+	const b = e.target.closest("button[data-cdel]");
+	if (!b || !cm.id) return;
+	try {
+		await remove(ref(db, `comments/${cm.id}/${b.dataset.cdel}`));
+	}
+	catch (err) {
+		setCommentStatus(`Couldn’t delete: ${err.message}`, true);
+	}
+});
+
 $("grid").addEventListener("click", (e) => {
 	const b = e.target.closest("button[data-map]");
 	if (b) return vote(b.dataset.map, Number(b.dataset.val));
 	const d = e.target.closest("button[data-dl]");
 	if (d) return downloadFile(d.dataset.dl);
 	const x = e.target.closest("button[data-del]");
-	if (x) deleteFile(x.dataset.del);
+	if (x) return deleteFile(x.dataset.del);
+	const c = e.target.closest("button[data-cm]");
+	if (c) openComments(c.dataset.cm);
 });
 $("cats").addEventListener("click", (e) => {
 	const b = e.target.closest("button[data-cat]");
@@ -323,7 +472,7 @@ $("authBtn").addEventListener("click", async () => {
 	}
 });
 onAuthStateChanged(auth, (user) => {
-	if (window.location.href != "https://whyisthisnotavalable.github.io/n-vote/") {
+	if (!onSite()) {
 		$("who").textContent = "not on my website. no voting for you";
 		return
 	};
@@ -335,12 +484,11 @@ onAuthStateChanged(auth, (user) => {
 		$("authBtn").textContent = "Sign in with Google";
 	}
 	else {
-		$("who").textContent = user.displayName || user.email || "Signed in";
 		$("authBtn").textContent = "Sign out";
 		setStatus("");
 		get(ref(db, `admins/${user.uid}`)).then((s) => {
 			state.admin = s.exists();
-			if (state.admin) $("who").textContent += " (admin)";
+			updateWho();
 			renderUpload();
 			scheduleRender();
 		}).catch((err) => {
@@ -350,7 +498,16 @@ onAuthStateChanged(auth, (user) => {
 	}
 	render();
 	renderUpload();
+	updateWho();
+	renderComments();
 });
+
+onValue(ref(db, "aliases"), (s) => {
+	state.aliases = s.val() || {};
+	updateWho();
+	scheduleRender();
+	renderComments();
+}, (err) => setStatus(`Could not load nicknames: ${err.message}`, true));
 onValue(ref(db, "files"), (s) => {
 	state.files = s.val() || {};
 	for (const id of Object.keys(state.files)) watchRatings(id);

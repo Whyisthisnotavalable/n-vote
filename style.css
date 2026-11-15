@@ -18,7 +18,7 @@ body {
   font: 400 15px/1.5 "Chakra Petch", system-ui, sans-serif; color: var(--ink); background: var(--bg);
 }
 h1 { margin: 0; font: 800 clamp(2rem, 6vw, 3.4rem)/1 "Chakra Petch", sans-serif; letter-spacing: -0.02em; }
-.sub { margin: 8px 0 0; color: var(--muted); max-width: 47ch; }
+.sub { margin: 8px 0 0; color: var(--muted); max-width: 46ch; }
 .top { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; }
 .account { display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: 14px; }
 
@@ -81,5 +81,11 @@ dialog::backdrop { background: rgb(0 0 0 / .45); }
 .card-actions { display: flex; gap: 8px; margin-top: 8px; }
 .card-actions button { flex: 1; border: 1px solid var(--line); background: var(--bg); padding: 6px 10px; }
 .card-actions .danger { flex: none; color: #c53030; }
-
 [hidden] { display: none !important; }
+.comments { display: grid; gap: 8px; max-height: 45vh; overflow: auto; margin: 12px 0; }
+.comment { border: 1px solid var(--line); background: var(--bg); padding: 8px 10px; }
+.comment .meta { display: flex; justify-content: space-between; gap: 8px; color: var(--muted); font-size: 13px; }
+.comment .meta button { border: 0; background: none; color: #c53030; padding: 0; }
+.comment p { margin: 4px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.cform { display: grid; gap: 8px; }
+.cform textarea { width: 100%; border: 1px solid var(--line); background: var(--surface); padding: 7px 12px; font: inherit; resize: vertical; }
