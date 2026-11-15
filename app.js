@@ -47,7 +47,7 @@ const fmtSize = (n) => (n < 1024 ? `${n} B` : `${(n / 1024).toFixed(1)} KB`);
 const isUp = (id) => id in state.files;
 const titleOf = (id) => (isUp(id) ? state.files[id].name.replace(/\.js$/i, "") : id);
 
-const aliasOf = (uid) => state.aliases[uid] || "Anonymous";
+const aliasOf = (uid) => state.aliases[uid] || "unnamed";
 const onSite = () => window.location.href == "https://whyisthisnotavalable.github.io/n-vote/";
 
 const cmCounts = {};
