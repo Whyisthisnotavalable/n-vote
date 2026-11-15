@@ -50,6 +50,9 @@ const titleOf = (id) => (isUp(id) ? state.files[id].name.replace(/\.js$/i, "") :
 const aliasOf = (uid) => state.aliases[uid] || "Anonymous";
 const onSite = () => window.location.href == "https://whyisthisnotavalable.github.io/n-vote/";
 
+const cmCounts = {};
+const countTip = (n) => (n === undefined ? "Counting…" : n === 0 ? "No comments yet" : `${n} comment${n === 1 ? "" : "s"}`);
+
 function setStatus(msg, isError = false) {
 	const el = $("status");
 	el.textContent = msg;
@@ -94,7 +97,9 @@ function visibleMaps() {
 		}),
 		top: (a, b) => avg(b) - avg(a),
 		votes: (a, b) => statsOf(b).count - statsOf(a).count,
-		unrated: (a, b) => (mineOf(a) ? 1 : 0) - (mineOf(b) ? 1 : 0)
+		unrated: (a, b) => (mineOf(a) ? 1 : 0) - (mineOf(b) ? 1 : 0),
+		newest: (a, b) => (state.files[b]?.uploaded || 0) - (state.files[a]?.uploaded || 0),
+		oldest: (a, b) => (state.files[a]?.uploaded || 0) - (state.files[b]?.uploaded || 0)
 	};
 	return ids.sort(sorters[state.sort]);
 }
@@ -117,7 +122,7 @@ function card(id) {
 	const date = up && f.uploaded ? new Date(f.uploaded).toLocaleDateString() : "";
 	const sub = up ? `by ${esc(aliasOf(f.uid))} · ${fmtSize(f.size)}${date ? " · " + date : ""}` : esc(state.maps[id]);
 	const canDelete = up && state.user && (f.uid === state.user.uid || state.admin);
-	const actions = `<button type="button" data-cm="${id}">Comments</button>` + (f ? `<button type="button" data-dl="${id}" title="File size: ${fmtSize(f.size)}">Download</button>` : "") + (canDelete ? `<button type="button" class="danger" data-del="${id}">Delete</button>` : "");
+	const actions = `<button type="button" data-cm="${id}" data-tip="${countTip(cmCounts[id]?.n)}">Comments</button>` + (f ? `<button type="button" data-dl="${id}" data-tip="File size: ${fmtSize(f.size)}" aria-label="Download, file size ${fmtSize(f.size)}">Download</button>` : "") + (canDelete ? `<button type="button" class="danger" data-del="${id}">Delete</button>` : "");
 	return `<article class="card">
 	<header><div><h2>${title}</h2><span class="cat">${sub}</span></div>${tierHtml}</header>
 	${up && f.description ? `<p class="desc">${esc(f.description)}</p>` : ""}
@@ -150,6 +155,13 @@ function scheduleRender() {
 		queued = false;
 		render();
 	});
+}
+
+function renderSort() {
+	const up = state.cat === "uploaded";
+	if (!up && (state.sort === "newest" || state.sort === "oldest")) state.sort = "name";
+	$("sort").innerHTML = (up ? `<option value="newest">Newest uploaded</option><option value="oldest">Oldest uploaded</option>` : "") + `<option value="name">Sort by name</option><option value="top">Highest rated</option><option value="votes">Most votes</option><option value="unrated">Not rated by me</option>`;
+	$("sort").value = state.sort;
 }
 
 function renderCats() {
@@ -213,8 +225,8 @@ async function uploadFile() {
 	const text = await f.text();
 	if (!text.length) return setFileStatus("That file is empty.", true);
 	if (text.length > maxCharacters) return setFileStatus(`File is too large (limit ${maxCharacters / 1000} KB).`, true);
-	const target = $("target")?.value || ""; // this menu only exists for admins
-	if (target && !state.admin) return setFileStatus("Only the owner can upload files for official maps.", true);
+	const target = $("target")?.value || "";
+	if (target && !state.admin) return setFileStatus("Only richard can upload files for official maps.", true);
 	$("uploadBtn").disabled = true;
 	try {
 		if (target) {
@@ -391,6 +403,11 @@ function openComments(id) {
 	renderComments();
 	cm.unsub = onValue(query(ref(db, `comments/${id}`), limitToLast(100)), (s) => {
 		cm.list = s.val() || {};
+		const n = Object.keys(cm.list).length;
+		if (n < 100) {
+			cmCounts[cm.id] = { n, t: Date.now() };
+			scheduleRender();
+		}
 		renderComments();
 		$("commentList").scrollTop = $("commentList").scrollHeight;
 	}, (err) => setCommentStatus(`Could not load comments: ${err.message}`, true));
@@ -433,6 +450,35 @@ $("commentList").addEventListener("click", async (e) => {
 	}
 });
 
+const countPending = new Set();
+async function loadCommentCount(id) {
+	const hit = cmCounts[id];
+	if ((hit && Date.now() - hit.t < 60000) || countPending.has(id)) return;
+	countPending.add(id);
+	try {
+		const res = await fetch(`${firebaseConfig.databaseURL}/comments/${id}.json?shallow=true`);
+		if (!res.ok) throw new Error(`HTTP ${res.status}`);
+		const data = await res.json();
+		cmCounts[id] = { n: data ? Object.keys(data).length : 0, t: Date.now() };
+		document.querySelectorAll(`[data-cm="${id}"]`).forEach((el) => {
+			el.dataset.tip = countTip(cmCounts[id].n);
+		});
+	}
+	catch (err) {
+		document.querySelectorAll(`[data-cm="${id}"]`).forEach((el) => {
+			el.dataset.tip = "Couldn’t load the count";
+		});
+	}
+	finally {
+		countPending.delete(id);
+	}
+}
+const hoverCount = (e) => {
+	const b = e.target.closest("button[data-cm]");
+	if (b) loadCommentCount(b.dataset.cm);
+};
+$("grid").addEventListener("mouseover", hoverCount);
+$("grid").addEventListener("focusin", hoverCount);
 $("grid").addEventListener("click", (e) => {
 	const b = e.target.closest("button[data-map]");
 	if (b) return vote(b.dataset.map, Number(b.dataset.val));
@@ -446,8 +492,10 @@ $("grid").addEventListener("click", (e) => {
 $("cats").addEventListener("click", (e) => {
 	const b = e.target.closest("button[data-cat]");
 	if (!b) return;
+	if (b.dataset.cat === "uploaded" && state.cat !== "uploaded" && state.sort === "name") state.sort = "newest";
 	state.cat = b.dataset.cat;
 	renderCats();
+	renderSort();
 	render();
 });
 $("search").addEventListener("input", (e) => {
@@ -458,6 +506,8 @@ $("sort").addEventListener("change", (e) => {
 	state.sort = e.target.value;
 	render();
 });
+$("rules").addEventListener("click", () => $("rulesDialog").showModal());
+$("rulesClose").addEventListener("click", () => $("rulesDialog").close());
 $("filesBtn").addEventListener("click", () => $("filesDialog").showModal());
 $("filesClose").addEventListener("click", () => $("filesDialog").close());
 $("filesDialog").addEventListener("click", (e) => {

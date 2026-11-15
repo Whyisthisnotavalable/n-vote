@@ -13,6 +13,7 @@
     <h1>Rate a map</h1>
   </div>
   <div class="account">
+    <button id="rules">Rules</button>
     <button id="filesBtn" type="button">Upload</button>
     <button id="aliasBtn" type="button" hidden>Nickname</button>
     <span id="who">Checking sign-in…</span>
@@ -55,7 +56,7 @@
     <h2 id="aliasTitle">Your nickname</h2>
     <button id="aliasClose" type="button" aria-label="Close">✕</button>
   </div>
-  <p class="sub">This is the name shown on your uploads and comments. Your Google name and email are never shown. Use 2–24 characters: letters, numbers, spaces, - and _.</p>
+  <p class="sub">This is the name shown on your uploads and comments. Your Google name and email are not shown. Use 2–24 characters: letters, numbers, spaces, - and _.</p>
   <div class="upload">
     <input id="aliasInput" type="text" maxlength="24" placeholder="Pick a nickname" aria-label="Nickname" autocomplete="off">
     <button id="aliasSave" type="button" class="primary">Save</button>
@@ -75,6 +76,24 @@
     <button id="commentPost" type="button" class="primary">Post</button>
   </div>
   <p id="commentStatus" class="status" role="status"></p>
+</dialog>
+
+<dialog id="rulesDialog" aria-labelledby="rulesTitle">
+  <div class="dlg-head">
+    <h2 id="rulesTitle">Rules</h2>
+    <button id="rulesClose" type="button" aria-label="Close">✕</button>
+  </div>
+  <p class="sub">Use common sense.</p>
+  <ul>
+    <li>No harassment, hate speech, slurs, or personal attacks.</li>
+    <li>No offensive names, and don’t pretend to be someone else.</li>
+    <li>Only upload maps you made, or ones you have permission to share.</li>
+    <li>One account per person.</li>
+    <li>Keep comments on topic. No spam or ads.</li>
+    <li>Uploads must be maps.</li>
+    <li>Uploaded maps cannot be troll maps or maps that have nothing to do with n-gon. Do not add something low quality. If you want to upload something that breaks these rules, ask me first.</li>
+  </ul>
+  <p class="sub">Break these and I may remove your content, reset your nickname, or disable your account. If you see someone breaking these rules, you can report them to me on discord, or github.</p>
 </dialog>
 
 <script type="module" src="app.js"></script>
