@@ -25,9 +25,9 @@
   },
   "ballast": {
     "category": "community",
-    "average": 5.92,
-    "count": 12,
-    "tier": "A"
+    "average": 6,
+    "count": 13,
+    "tier": "S"
   },
   "basement": {
     "category": "community",
@@ -43,14 +43,14 @@
   },
   "buttonbutton": {
     "category": "community",
-    "average": 2.29,
-    "count": 14,
+    "average": 2.2,
+    "count": 15,
     "tier": "D"
   },
   "cantilever": {
     "category": "community",
-    "average": 2.14,
-    "count": 14,
+    "average": 2.07,
+    "count": 15,
     "tier": "D"
   },
   "chute": {
@@ -61,8 +61,8 @@
   },
   "clock": {
     "category": "community",
-    "average": 5.5,
-    "count": 16,
+    "average": 5.47,
+    "count": 17,
     "tier": "A"
   },
   "coliseum": {
@@ -115,8 +115,8 @@
   },
   "dojo": {
     "category": "community",
-    "average": 2.45,
-    "count": 11,
+    "average": 2.42,
+    "count": 12,
     "tier": "D"
   },
   "downpour": {
@@ -157,7 +157,7 @@
   },
   "flocculation": {
     "category": "playable",
-    "average": 5.15,
+    "average": 5.23,
     "count": 13,
     "tier": "A"
   },
@@ -355,8 +355,8 @@
   },
   "satellite": {
     "category": "playable",
-    "average": 6.69,
-    "count": 13,
+    "average": 6.64,
+    "count": 14,
     "tier": "S"
   },
   "sewers": {
@@ -409,8 +409,8 @@
   },
   "stronghold": {
     "category": "community",
-    "average": 6.27,
-    "count": 11,
+    "average": 6.08,
+    "count": 12,
     "tier": "S"
   },
   "substructure": {
@@ -421,7 +421,7 @@
   },
   "subway": {
     "category": "unique",
-    "average": 5.21,
+    "average": 5.26,
     "count": 19,
     "tier": "A"
   },
@@ -433,8 +433,8 @@
   },
   "superstructure": {
     "category": "playable",
-    "average": 5.5,
-    "count": 10,
+    "average": 5.55,
+    "count": 11,
     "tier": "A"
   },
   "temple": {
@@ -493,8 +493,8 @@
   },
   "turbine": {
     "category": "community",
-    "average": 5.09,
-    "count": 11,
+    "average": 5.25,
+    "count": 12,
     "tier": "A"
   },
   "unchartedCave": {
@@ -541,8 +541,8 @@
   },
   "yingYang": {
     "category": "community",
-    "average": 1.82,
-    "count": 17,
+    "average": 1.78,
+    "count": 18,
     "tier": "F"
   },
   "zenith": {
