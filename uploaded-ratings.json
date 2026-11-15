@@ -111,7 +111,7 @@
   },
   "-P6G4nykrvEr-InIL50D": {
     "name": "frequency.js",
-    "author": null,
+    "author": "TheOnlyWeedleFan",
     "description": "My first 'proper' level, and a rather long one at that; it works better as a 'unique' level (like subway) if such a thing were to be implemented in the future. It is HIGHLY RECOMMENDED to play the level (either in-game or through test export) FIRST, BEFORE examining it in the editor.",
     "size": 157239,
     "uploaded": 1794509324386,
@@ -161,7 +161,7 @@
   },
   "-P5xCS-GaV-Qiq4bHIh5": {
     "name": "intrusion.js",
-    "author": null,
+    "author": "TheOnlyWeedleFan",
     "description": "A short level I made to test some code bits, including level music. The level track was originally composed by me as a joke, then modified to fit (so please ignore the poor composition quality, lol). Unfortunately, some of the camera code broke in a recent level editor update, sorry about that!",
     "size": 36907,
     "uploaded": 1794175783094,
