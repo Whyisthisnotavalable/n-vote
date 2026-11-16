@@ -239,6 +239,26 @@
     "count": 8,
     "tier": "C"
   },
+  "-P6Y7XBVQTt1jbNZkaiJ": {
+    "name": "network.js",
+    "author": "Sad Frog Corporation",
+    "description": "Leap of Faith!!",
+    "size": 21865,
+    "uploaded": 1794812027763,
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
+  "-P6XUzuI3Qx3ADzdmNmk": {
+    "name": "observatory.js",
+    "author": "Sad Frog Corporation",
+    "description": "Beautiful stars, beautiful powerups.",
+    "size": 19338,
+    "uploaded": 1794801401567,
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
   "-P5dOTsuQsVWmMHRYEWO": {
     "name": "prison.js",
     "author": null,
@@ -271,7 +291,7 @@
   },
   "-P6AwBtBasuOCfskNONd": {
     "name": "slot.js",
-    "author": null,
+    "author": "ZqolRn",
     "description": "gambling",
     "size": 59078,
     "uploaded": 1794422919037,
