@@ -145,9 +145,9 @@
   },
   "fire": {
     "category": "training",
-    "average": 5.86,
-    "count": 7,
-    "tier": "A"
+    "average": 6,
+    "count": 8,
+    "tier": "S"
   },
   "flappyGon": {
     "category": "community",
@@ -277,8 +277,8 @@
   },
   "missile": {
     "category": "training",
-    "average": 6.25,
-    "count": 8,
+    "average": 6.33,
+    "count": 9,
     "tier": "S"
   },
   "nailGun": {
@@ -463,8 +463,8 @@
   },
   "throwAt": {
     "category": "training",
-    "average": 6.43,
-    "count": 7,
+    "average": 6.5,
+    "count": 8,
     "tier": "S"
   },
   "tlinat": {
