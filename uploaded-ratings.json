@@ -59,15 +59,15 @@
     "count": 2,
     "tier": "A"
   },
-  "-P6M2SU2hZ2GgyMnkLTF": {
+  "-P6abPDQaMJDi1daYNTE": {
     "name": "convolve.js",
-    "author": null,
-    "description": "A spiral of puzzles challenging even the skilled",
-    "size": 98693,
-    "uploaded": 1794609371222,
-    "average": 4,
-    "count": 2,
-    "tier": "B"
+    "author": "rgb-44865",
+    "description": "A spiral of puzzles that may challenge even the skilled.",
+    "size": 142314,
+    "uploaded": 1794870453263,
+    "average": null,
+    "count": 0,
+    "tier": null
   },
   "-P6CtG1CPGE05kR6Jazc": {
     "name": "coolLevel3.js",
@@ -295,7 +295,7 @@
     "description": "Hehe",
     "size": 27350,
     "uploaded": 1794850113286,
-    "average": 2,
+    "average": 1,
     "count": 1,
     "tier": null
   },
@@ -305,9 +305,9 @@
     "description": "It's possible, it just is quite difficult.",
     "size": 27350,
     "uploaded": 1794229803770,
-    "average": 1.88,
+    "average": 2,
     "count": 8,
-    "tier": "F"
+    "tier": "D"
   },
   "-P6AwBtBasuOCfskNONd": {
     "name": "slot.js",
@@ -405,8 +405,8 @@
     "description": "N-GON corporation underwater sea base captured (Ultrakill reference lol)",
     "size": 41902,
     "uploaded": 1794780043449,
-    "average": 5,
-    "count": 1,
-    "tier": null
+    "average": 6,
+    "count": 2,
+    "tier": "S"
   }
 }
