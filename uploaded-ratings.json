@@ -65,9 +65,9 @@
     "description": "A spiral of puzzles that may challenge even the skilled.",
     "size": 142314,
     "uploaded": 1794870453263,
-    "average": 7,
-    "count": 2,
-    "tier": "S"
+    "average": 5.67,
+    "count": 3,
+    "tier": "A"
   },
   "-P6CtG1CPGE05kR6Jazc": {
     "name": "coolLevel3.js",
@@ -155,8 +155,8 @@
     "description": "A short vanilla-inspired map along the lines of sewers and flocculation.",
     "size": 20665,
     "uploaded": 1794843773150,
-    "average": 5.67,
-    "count": 3,
+    "average": 5.75,
+    "count": 4,
     "tier": "A"
   },
   "-P6H69Jm6Y2bcia0EeGp": {
@@ -296,7 +296,7 @@
     "size": 27350,
     "uploaded": 1794850113286,
     "average": 1,
-    "count": 3,
+    "count": 4,
     "tier": "F"
   },
   "-P6-QWdo7x5wumMmOIBG": {
@@ -305,9 +305,9 @@
     "description": "It's possible, it just is quite difficult.",
     "size": 27350,
     "uploaded": 1794229803770,
-    "average": 2,
+    "average": 1.88,
     "count": 8,
-    "tier": "D"
+    "tier": "F"
   },
   "-P6AwBtBasuOCfskNONd": {
     "name": "slot.js",
@@ -405,8 +405,8 @@
     "description": "N-GON corporation underwater sea base captured (Ultrakill reference lol)",
     "size": 41902,
     "uploaded": 1794780043449,
-    "average": 5.67,
-    "count": 3,
+    "average": 5.25,
+    "count": 4,
     "tier": "A"
   }
 }
