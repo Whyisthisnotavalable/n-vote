@@ -43,7 +43,7 @@ const state = {
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({
 	"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
 }[c]));
-const fmtSize = (n) => (n < 1024 ? `${n} B` : `${(n / 1024).toFixed(1)} KB`);
+const fmtSize = (n) => (n < 1024 ? `${n} B` : n < 1048576 ? `${(n / 1024).toFixed(1)} KB` : `${(n / 1048576).toFixed(1)} MB`);
 const isUp = (id) => id in state.files;
 const titleOf = (id) => (isUp(id) ? state.files[id].name.replace(/\.js$/i, "") : id);
 
@@ -224,7 +224,7 @@ async function uploadFile() {
 	if (!/\.js$/i.test(f.name)) return setFileStatus("Only .js files are allowed.", true);
 	const text = await f.text();
 	if (!text.length) return setFileStatus("That file is empty.", true);
-	if (text.length > maxCharacters) return setFileStatus(`File is too large (limit ${maxCharacters / 1000} KB).`, true);
+	if (!state.admin && text.length > maxCharacters) return setFileStatus(`File is too large (limit ${maxCharacters / 1000} KB).`, true);
 	const target = $("target")?.value || "";
 	if (target && !state.admin) return setFileStatus("Only richard can upload files for official maps.", true);
 	$("uploadBtn").disabled = true;
