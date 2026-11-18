@@ -66,8 +66,8 @@
     "size": 142314,
     "uploaded": 1794870453263,
     "average": 7,
-    "count": 1,
-    "tier": null
+    "count": 2,
+    "tier": "S"
   },
   "-P6CtG1CPGE05kR6Jazc": {
     "name": "coolLevel3.js",
@@ -96,8 +96,8 @@
     "size": 33741,
     "uploaded": 1794780161321,
     "average": 2,
-    "count": 1,
-    "tier": null
+    "count": 2,
+    "tier": "D"
   },
   "-P5yoCnChmmGeQPkeVrJ": {
     "name": "extrema.js",
@@ -115,8 +115,8 @@
     "description": "Getting over it but in n-gon",
     "size": 142767,
     "uploaded": 1794596842479,
-    "average": 5.33,
-    "count": 6,
+    "average": 5.75,
+    "count": 8,
     "tier": "A"
   },
   "-P6G4nykrvEr-InIL50D": {
@@ -155,8 +155,8 @@
     "description": "A short vanilla-inspired map along the lines of sewers and flocculation.",
     "size": 20665,
     "uploaded": 1794843773150,
-    "average": 5,
-    "count": 2,
+    "average": 5.67,
+    "count": 3,
     "tier": "A"
   },
   "-P6H69Jm6Y2bcia0EeGp": {
@@ -165,8 +165,8 @@
     "description": "try beating with out cheating",
     "size": 79516,
     "uploaded": 1794526455601,
-    "average": 4.33,
-    "count": 3,
+    "average": 4.25,
+    "count": 4,
     "tier": "B"
   },
   "-P6KXNrqYHwo34Sc_lcP": {
@@ -195,8 +195,8 @@
     "description": "This level is mostly parkour based. It is an obstacle based level where you activate buttons to unlock the rest of the level.",
     "size": 55754,
     "uploaded": 1793979210462,
-    "average": 1.75,
-    "count": 4,
+    "average": 1.6,
+    "count": 5,
     "tier": "F"
   },
   "-P5lotBl257-96mF4FbR": {
@@ -235,7 +235,7 @@
     "description": "this strange rain has flooded the world. make sure not to drown! (also this is my first level)",
     "size": 113108,
     "uploaded": 1794648450785,
-    "average": 5.25,
+    "average": 5.5,
     "count": 4,
     "tier": "A"
   },
@@ -275,8 +275,8 @@
     "description": "Rather difficult, but I hope you found as much fun to play at as I did making it!",
     "size": 59523,
     "uploaded": 1793843392164,
-    "average": 3.71,
-    "count": 7,
+    "average": 3.38,
+    "count": 8,
     "tier": "C"
   },
   "-P5brBIRnKBXn2xuyjUO": {
@@ -296,7 +296,7 @@
     "size": 27350,
     "uploaded": 1794850113286,
     "average": 1,
-    "count": 2,
+    "count": 3,
     "tier": "F"
   },
   "-P6-QWdo7x5wumMmOIBG": {
@@ -385,9 +385,9 @@
     "description": "A waiting room with hazards.",
     "size": 15358,
     "uploaded": 1794781381660,
-    "average": 5,
-    "count": 1,
-    "tier": null
+    "average": 6,
+    "count": 2,
+    "tier": "S"
   },
   "-P6WDEbK_WYo0tCN6Qaj": {
     "name": "warship.js",

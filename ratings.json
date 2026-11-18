@@ -361,8 +361,8 @@
   },
   "sewers": {
     "category": "playable",
-    "average": 5.5,
-    "count": 12,
+    "average": 5.38,
+    "count": 13,
     "tier": "A"
   },
   "shipwreck": {
@@ -541,8 +541,8 @@
   },
   "yingYang": {
     "category": "community",
-    "average": 1.74,
-    "count": 19,
+    "average": 1.7,
+    "count": 20,
     "tier": "F"
   },
   "zenith": {
