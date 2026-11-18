@@ -19,6 +19,16 @@
     "count": 0,
     "tier": null
   },
+  "-P6jyffcl2QSemv5OWXZ": {
+    "name": "bobbitWormBoss.js",
+    "author": "TheOnlyWeedleFan",
+    "description": "A level I made to showcase the implementation of custom mobs/bosses in maps. The level's boss is a soft-body boss based on the real-life bobbit worm, with a custom behavior loop. See the level code for more. This is a proof-of-concept map, and was designed for 'test export' mode---NOT regular n-gon.",
+    "size": 18669,
+    "uploaded": 1795027549113,
+    "average": 6,
+    "count": 1,
+    "tier": null
+  },
   "-P5_nY-wgvKHRuh8PHjP": {
     "name": "BossZone.js",
     "author": "Icarus34",
@@ -155,9 +165,9 @@
     "description": "A short vanilla-inspired map along the lines of sewers and flocculation.",
     "size": 20665,
     "uploaded": 1794843773150,
-    "average": 5.75,
+    "average": 6,
     "count": 4,
-    "tier": "A"
+    "tier": "S"
   },
   "-P6H69Jm6Y2bcia0EeGp": {
     "name": "help.js",
@@ -305,8 +315,8 @@
     "description": "It's possible, it just is quite difficult.",
     "size": 27350,
     "uploaded": 1794229803770,
-    "average": 1.88,
-    "count": 8,
+    "average": 1.14,
+    "count": 7,
     "tier": "F"
   },
   "-P6AwBtBasuOCfskNONd": {
@@ -348,6 +358,16 @@
     "average": 4,
     "count": 7,
     "tier": "B"
+  },
+  "-P6iZANGXtV1SHjtEvss": {
+    "name": "talus.js",
+    "author": "rgb-44865",
+    "description": "Caution: high blockslide risk in the area. This is designed to be more like standard n-gon maps.",
+    "size": 28308,
+    "uploaded": 1795003823724,
+    "average": null,
+    "count": 0,
+    "tier": null
   },
   "-P60KokQMzjXXmMlwiXK": {
     "name": "tether _4_.js",
