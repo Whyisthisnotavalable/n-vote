@@ -5,8 +5,8 @@
     "description": "The map that was meant to be my 10th map. I never finished it, and right now it's still a work in progress. I was too ambitious with this one, and I didn't have time to work on it. It's also kind of broken if you play it in the test editor.",
     "size": 2006467,
     "uploaded": 1795045210127,
-    "average": null,
-    "count": 0,
+    "average": 7,
+    "count": 1,
     "tier": null
   },
   "-P5plZ26AX7fNiOLJGDc": {
@@ -125,8 +125,8 @@
     "description": "Getting over it but in n-gon",
     "size": 142767,
     "uploaded": 1794596842479,
-    "average": 5.75,
-    "count": 8,
+    "average": 5.44,
+    "count": 9,
     "tier": "A"
   },
   "-P6G4nykrvEr-InIL50D": {
@@ -155,9 +155,9 @@
     "description": "Hanger, by desboot",
     "size": 20135,
     "uploaded": 1794338494270,
-    "average": 5,
-    "count": 3,
-    "tier": "A"
+    "average": 4.75,
+    "count": 4,
+    "tier": "B"
   },
   "-P6_0cXgqoMslZU36ARi": {
     "name": "hazardChamber.js",
@@ -245,8 +245,8 @@
     "description": "this strange rain has flooded the world. make sure not to drown! (also this is my first level)",
     "size": 113108,
     "uploaded": 1794648450785,
-    "average": 5.5,
-    "count": 4,
+    "average": 5.6,
+    "count": 5,
     "tier": "A"
   },
   "-P5brOz16fqPTyB_OEpf": {
@@ -255,8 +255,8 @@
     "description": "Lots of wind, definitely shifts parkour a lot",
     "size": 35715,
     "uploaded": 1793817681941,
-    "average": 3.25,
-    "count": 8,
+    "average": 3,
+    "count": 9,
     "tier": "C"
   },
   "-P6Y7XBVQTt1jbNZkaiJ": {
@@ -265,9 +265,9 @@
     "description": "Leap of Faith!!",
     "size": 21865,
     "uploaded": 1794812027763,
-    "average": 6,
-    "count": 1,
-    "tier": null
+    "average": 5,
+    "count": 2,
+    "tier": "A"
   },
   "-P6XUzuI3Qx3ADzdmNmk": {
     "name": "observatory.js",
@@ -285,9 +285,9 @@
     "description": "A very simple and short path.",
     "size": 19667,
     "uploaded": 1795042172193,
-    "average": 7,
-    "count": 1,
-    "tier": null
+    "average": 5.33,
+    "count": 3,
+    "tier": "A"
   },
   "-P5dOTsuQsVWmMHRYEWO": {
     "name": "prison.js",
@@ -315,8 +315,8 @@
     "description": "where the slime in sewers comes from ig",
     "size": 77054,
     "uploaded": 1795045856794,
-    "average": null,
-    "count": 0,
+    "average": 3,
+    "count": 1,
     "tier": null
   },
   "-P6_OoP61AIdcfgKbP3K": {
@@ -345,7 +345,7 @@
     "description": "gambling",
     "size": 59078,
     "uploaded": 1794422919037,
-    "average": 5.38,
+    "average": 5.25,
     "count": 8,
     "tier": "A"
   },
@@ -385,8 +385,8 @@
     "description": "Caution: high blockslide risk in the area. This is designed to be more like standard n-gon maps.",
     "size": 28308,
     "uploaded": 1795003823724,
-    "average": null,
-    "count": 0,
+    "average": 5,
+    "count": 1,
     "tier": null
   },
   "-P60KokQMzjXXmMlwiXK": {
@@ -435,9 +435,9 @@
     "description": "N-GON corporation warship captured by mobs",
     "size": 25090,
     "uploaded": 1794779970112,
-    "average": 7,
-    "count": 1,
-    "tier": null
+    "average": 5.67,
+    "count": 3,
+    "tier": "A"
   },
   "-P6WDWVqrK0GaFDpuWUJ": {
     "name": "wrath.js",
