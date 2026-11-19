@@ -163,8 +163,8 @@
   },
   "fortress": {
     "category": "community",
-    "average": 6,
-    "count": 9,
+    "average": 6.1,
+    "count": 10,
     "tier": "S"
   },
   "furnace": {
@@ -205,8 +205,8 @@
   },
   "house": {
     "category": "community",
-    "average": 5.36,
-    "count": 11,
+    "average": 5.5,
+    "count": 12,
     "tier": "A"
   },
   "HVAC": {
@@ -307,8 +307,8 @@
   },
   "perplex": {
     "category": "community",
-    "average": 6.36,
-    "count": 11,
+    "average": 6.42,
+    "count": 12,
     "tier": "S"
   },
   "reactor": {
@@ -529,8 +529,8 @@
   },
   "walk": {
     "category": "training",
-    "average": 6.43,
-    "count": 7,
+    "average": 6.5,
+    "count": 8,
     "tier": "S"
   },
   "warehouse": {
