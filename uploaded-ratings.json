@@ -35,9 +35,9 @@
     "description": "A level I made to showcase the implementation of custom mobs/bosses in maps. The level's boss is a soft-body boss based on the real-life bobbit worm, with a custom behavior loop. See the level code for more. This is a proof-of-concept map, and was designed for 'test export' mode---NOT regular n-gon.",
     "size": 18669,
     "uploaded": 1795027549113,
-    "average": 6,
-    "count": 1,
-    "tier": null
+    "average": 6.5,
+    "count": 2,
+    "tier": "S"
   },
   "-P5_nY-wgvKHRuh8PHjP": {
     "name": "BossZone.js",
@@ -315,9 +315,9 @@
     "description": "where the slime in sewers comes from ig",
     "size": 77054,
     "uploaded": 1795045856794,
-    "average": 3,
-    "count": 1,
-    "tier": null
+    "average": 3.5,
+    "count": 2,
+    "tier": "C"
   },
   "-P6_OoP61AIdcfgKbP3K": {
     "name": "skillpuzzle _1_.js",
