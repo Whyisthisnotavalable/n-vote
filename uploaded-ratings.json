@@ -6,8 +6,8 @@
     "size": 2006467,
     "uploaded": 1795045210127,
     "average": 7,
-    "count": 1,
-    "tier": null
+    "count": 2,
+    "tier": "S"
   },
   "-P5plZ26AX7fNiOLJGDc": {
     "name": "battlefield.js",
@@ -285,9 +285,9 @@
     "description": "A very simple and short path.",
     "size": 19667,
     "uploaded": 1795042172193,
-    "average": 5.33,
+    "average": 4.67,
     "count": 3,
-    "tier": "A"
+    "tier": "B"
   },
   "-P5dOTsuQsVWmMHRYEWO": {
     "name": "prison.js",
@@ -385,9 +385,9 @@
     "description": "Caution: high blockslide risk in the area. This is designed to be more like standard n-gon maps.",
     "size": 28308,
     "uploaded": 1795003823724,
-    "average": 5,
-    "count": 1,
-    "tier": null
+    "average": 4.5,
+    "count": 2,
+    "tier": "B"
   },
   "-P60KokQMzjXXmMlwiXK": {
     "name": "tether _4_.js",

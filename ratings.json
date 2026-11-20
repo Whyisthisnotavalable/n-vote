@@ -181,8 +181,8 @@
   },
   "gravitron": {
     "category": "playable",
-    "average": 5.31,
-    "count": 16,
+    "average": 5.29,
+    "count": 17,
     "tier": "A"
   },
   "heal": {
@@ -223,7 +223,7 @@
   },
   "interferometer": {
     "category": "unique",
-    "average": 3.62,
+    "average": 3.52,
     "count": 21,
     "tier": "C"
   },
@@ -247,9 +247,9 @@
   },
   "labs": {
     "category": "playable",
-    "average": 5.92,
-    "count": 13,
-    "tier": "A"
+    "average": 6,
+    "count": 14,
+    "tier": "S"
   },
   "lake": {
     "category": "community",
@@ -476,7 +476,7 @@
   "towers": {
     "category": "playable",
     "average": 6,
-    "count": 10,
+    "count": 11,
     "tier": "S"
   },
   "trial": {
