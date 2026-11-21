@@ -59,15 +59,25 @@
     "count": 13,
     "tier": "A"
   },
+  "-P7-G7kZlKcWF492NzbU": {
+    "name": "cavesample _1_.js",
+    "author": "Data Expunged",
+    "description": "Just a sample",
+    "size": 38457,
+    "uploaded": 1795300822179,
+    "average": null,
+    "count": 0,
+    "tier": null
+  },
   "-P5brUs6VeXOMQ2wOBN5": {
     "name": "ChainAction _1_.js",
     "author": "kidsrule6",
     "description": "Just a fun button game, can be a little buggy sometimes...",
     "size": 15925,
     "uploaded": 1793817706043,
-    "average": 3.14,
-    "count": 7,
-    "tier": "C"
+    "average": 2.88,
+    "count": 8,
+    "tier": "D"
   },
   "-P6GYUdEBneZysFUwlve": {
     "name": "choice.js",
@@ -225,9 +235,9 @@
     "description": "JustClimb",
     "size": 33728,
     "uploaded": 1793984795506,
-    "average": 3.2,
-    "count": 5,
-    "tier": "C"
+    "average": 2.83,
+    "count": 6,
+    "tier": "D"
   },
   "-P60TXdSH4AlsskNzeYL": {
     "name": "Keyholes1.2.js",
@@ -245,8 +255,8 @@
     "description": "Loot lol",
     "size": 12532,
     "uploaded": 1793880046979,
-    "average": 2.17,
-    "count": 6,
+    "average": 2,
+    "count": 7,
     "tier": "D"
   },
   "-P6ONXO5Pv_7UiU-DGDN": {
@@ -265,9 +275,9 @@
     "description": "Lots of wind, definitely shifts parkour a lot",
     "size": 35715,
     "uploaded": 1793817681941,
-    "average": 3,
-    "count": 9,
-    "tier": "C"
+    "average": 2.8,
+    "count": 10,
+    "tier": "D"
   },
   "-P6uph3gDYIwaY6b_i6w": {
     "name": "mobPalace.js",
@@ -401,7 +411,7 @@
   },
   "-P5y4NCYJnPGfCAYt9pN": {
     "name": "solidPortals.js",
-    "author": null,
+    "author": "sunshine",
     "description": "short map in an abandoned datacenter(?)",
     "size": 43920,
     "uploaded": 1794190443542,
@@ -415,9 +425,9 @@
     "description": "Lots of portals, bottom left is my favorite. it's not actually as big as it looks",
     "size": 80512,
     "uploaded": 1793817741739,
-    "average": 4,
-    "count": 7,
-    "tier": "B"
+    "average": 3.63,
+    "count": 8,
+    "tier": "C"
   },
   "-P6iZANGXtV1SHjtEvss": {
     "name": "talus.js",
