@@ -125,9 +125,9 @@
     "description": "A hallway with an upper and lower path you can easily switch between",
     "size": 106494,
     "uploaded": 1795209869729,
-    "average": 6,
-    "count": 1,
-    "tier": null
+    "average": 5,
+    "count": 2,
+    "tier": "A"
   },
   "-P5yoCnChmmGeQPkeVrJ": {
     "name": "extrema.js",
@@ -207,6 +207,16 @@
     "uploaded": 1794583924355,
     "average": 3,
     "count": 1,
+    "tier": null
+  },
+  "-P7-l7qBpuMRz07aVoKp": {
+    "name": "hiddenObjects.js",
+    "author": "TheOnlyWeedleFan",
+    "description": "A series of map objects implemented in n-gon, but not yet available in the editor. This could either be because they are in beta, or they've been forgotten about. I have placed them in this map for sake of convenience and visibility.",
+    "size": 5110,
+    "uploaded": 1795309211133,
+    "average": null,
+    "count": 0,
     "tier": null
   },
   "-P5xCS-GaV-Qiq4bHIh5": {
@@ -345,9 +355,9 @@
     "description": "map that revolves around an invincible satteliteBoss with few safe spots",
     "size": 63181,
     "uploaded": 1795209829346,
-    "average": 6,
-    "count": 1,
-    "tier": null
+    "average": 5.5,
+    "count": 2,
+    "tier": "A"
   },
   "-P6v0A4MxVMfC1DUBQUB": {
     "name": "sanitation _1_.js",
