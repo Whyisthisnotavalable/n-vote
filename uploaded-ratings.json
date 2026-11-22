@@ -115,8 +115,8 @@
     "description": "Descend through a cave and adventure further and further as the tunnels get darker and narrower.",
     "size": 191650,
     "uploaded": 1795210014795,
-    "average": null,
-    "count": 0,
+    "average": 4,
+    "count": 1,
     "tier": null
   },
   "-P6uqATkWSaanYEcrUjz": {
@@ -125,9 +125,9 @@
     "description": "A hallway with an upper and lower path you can easily switch between",
     "size": 106494,
     "uploaded": 1795209869729,
-    "average": 5,
-    "count": 2,
-    "tier": "A"
+    "average": 4.67,
+    "count": 3,
+    "tier": "B"
   },
   "-P5yoCnChmmGeQPkeVrJ": {
     "name": "extrema.js",
@@ -355,9 +355,9 @@
     "description": "map that revolves around an invincible satteliteBoss with few safe spots",
     "size": 63181,
     "uploaded": 1795209829346,
-    "average": 5.5,
-    "count": 2,
-    "tier": "A"
+    "average": 4.67,
+    "count": 3,
+    "tier": "B"
   },
   "-P6v0A4MxVMfC1DUBQUB": {
     "name": "sanitation _1_.js",

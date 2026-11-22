@@ -25,9 +25,9 @@
   },
   "ballast": {
     "category": "community",
-    "average": 6,
-    "count": 13,
-    "tier": "S"
+    "average": 5.86,
+    "count": 14,
+    "tier": "A"
   },
   "basement": {
     "category": "community",
@@ -139,7 +139,7 @@
   },
   "final": {
     "category": "unique",
-    "average": 6.29,
+    "average": 6.38,
     "count": 21,
     "tier": "S"
   },
@@ -205,8 +205,8 @@
   },
   "house": {
     "category": "community",
-    "average": 5.5,
-    "count": 12,
+    "average": 5.31,
+    "count": 13,
     "tier": "A"
   },
   "HVAC": {
@@ -223,7 +223,7 @@
   },
   "interferometer": {
     "category": "unique",
-    "average": 3.52,
+    "average": 3.57,
     "count": 21,
     "tier": "C"
   },
@@ -325,7 +325,7 @@
   },
   "reservoir": {
     "category": "unique",
-    "average": 4.11,
+    "average": 4.16,
     "count": 19,
     "tier": "B"
   },
@@ -343,8 +343,8 @@
   },
   "ruins": {
     "category": "community",
-    "average": 3.85,
-    "count": 13,
+    "average": 3.71,
+    "count": 14,
     "tier": "C"
   },
   "run": {
@@ -409,9 +409,9 @@
   },
   "stronghold": {
     "category": "community",
-    "average": 6.08,
-    "count": 13,
-    "tier": "S"
+    "average": 5.86,
+    "count": 14,
+    "tier": "A"
   },
   "substructure": {
     "category": "playable",
@@ -511,8 +511,8 @@
   },
   "vats": {
     "category": "community",
-    "average": 6.17,
-    "count": 12,
+    "average": 6.08,
+    "count": 13,
     "tier": "S"
   },
   "vents": {
