@@ -359,16 +359,6 @@
     "count": 3,
     "tier": "B"
   },
-  "-P6v0A4MxVMfC1DUBQUB": {
-    "name": "sanitation _1_.js",
-    "author": "Data Expunged",
-    "description": "don't expect anything good",
-    "size": 86567,
-    "uploaded": 1795212751358,
-    "average": null,
-    "count": 0,
-    "tier": null
-  },
   "-P6l3WKHaotbrwRJsBLv": {
     "name": "sanitation.js",
     "author": "Data Expunged",
@@ -498,6 +488,16 @@
     "average": 5.67,
     "count": 3,
     "tier": "A"
+  },
+  "-P74TO3gQkMk2Hw8qW-U": {
+    "name": "Warship2Sample.js",
+    "author": "Data Expunged",
+    "description": "my worst level yet",
+    "size": 22758,
+    "uploaded": 1795388182943,
+    "average": null,
+    "count": 0,
+    "tier": null
   },
   "-P6WDWVqrK0GaFDpuWUJ": {
     "name": "wrath.js",
