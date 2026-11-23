@@ -115,9 +115,9 @@
     "description": "Descend through a cave and adventure further and further as the tunnels get darker and narrower.",
     "size": 191650,
     "uploaded": 1795210014795,
-    "average": 4,
-    "count": 1,
-    "tier": null
+    "average": 5.5,
+    "count": 2,
+    "tier": "A"
   },
   "-P6uqATkWSaanYEcrUjz": {
     "name": "diadromos.js",
@@ -125,9 +125,9 @@
     "description": "A hallway with an upper and lower path you can easily switch between",
     "size": 106494,
     "uploaded": 1795209869729,
-    "average": 4.67,
-    "count": 3,
-    "tier": "B"
+    "average": 5,
+    "count": 4,
+    "tier": "A"
   },
   "-P5yoCnChmmGeQPkeVrJ": {
     "name": "extrema.js",
@@ -215,8 +215,8 @@
     "description": "A series of map objects implemented in n-gon, but not yet available in the editor. This could either be because they are in beta, or they've been forgotten about. I have placed them in this map for sake of convenience and visibility.",
     "size": 5110,
     "uploaded": 1795309211133,
-    "average": null,
-    "count": 0,
+    "average": 4,
+    "count": 1,
     "tier": null
   },
   "-P5xCS-GaV-Qiq4bHIh5": {
@@ -295,8 +295,8 @@
     "description": "long level where you acend a tower",
     "size": 98873,
     "uploaded": 1795209745365,
-    "average": 6,
-    "count": 2,
+    "average": 6.33,
+    "count": 3,
     "tier": "S"
   },
   "-P6Y7XBVQTt1jbNZkaiJ": {
@@ -316,7 +316,7 @@
     "size": 19338,
     "uploaded": 1794801401567,
     "average": 4,
-    "count": 2,
+    "count": 3,
     "tier": "B"
   },
   "-P6kqSnA_zN3WD6_RFdD": {
@@ -355,8 +355,8 @@
     "description": "map that revolves around an invincible satteliteBoss with few safe spots",
     "size": 63181,
     "uploaded": 1795209829346,
-    "average": 4.67,
-    "count": 3,
+    "average": 4.25,
+    "count": 4,
     "tier": "B"
   },
   "-P6l3WKHaotbrwRJsBLv": {
