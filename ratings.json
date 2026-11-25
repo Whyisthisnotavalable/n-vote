@@ -8,7 +8,7 @@
   "aerie": {
     "category": "playable",
     "average": 5.95,
-    "count": 19,
+    "count": 20,
     "tier": "A"
   },
   "archipelago": {
@@ -134,13 +134,13 @@
   "factory": {
     "category": "unique",
     "average": 6.05,
-    "count": 21,
+    "count": 22,
     "tier": "S"
   },
   "final": {
     "category": "unique",
-    "average": 6.38,
-    "count": 21,
+    "average": 6.41,
+    "count": 22,
     "tier": "S"
   },
   "fire": {
@@ -169,8 +169,8 @@
   },
   "furnace": {
     "category": "playable",
-    "average": 5.5,
-    "count": 16,
+    "average": 5.47,
+    "count": 17,
     "tier": "A"
   },
   "gauntlet": {
@@ -181,8 +181,8 @@
   },
   "gravitron": {
     "category": "playable",
-    "average": 5.29,
-    "count": 17,
+    "average": 5.28,
+    "count": 18,
     "tier": "A"
   },
   "heal": {
@@ -193,8 +193,8 @@
   },
   "highrise": {
     "category": "playable",
-    "average": 5.42,
-    "count": 12,
+    "average": 5.46,
+    "count": 13,
     "tier": "A"
   },
   "hold": {
@@ -217,14 +217,14 @@
   },
   "initial": {
     "category": "unique",
-    "average": 6.1,
-    "count": 20,
+    "average": 6.14,
+    "count": 21,
     "tier": "S"
   },
   "interferometer": {
     "category": "unique",
-    "average": 3.57,
-    "count": 21,
+    "average": 3.45,
+    "count": 22,
     "tier": "C"
   },
   "intervals": {
@@ -247,8 +247,8 @@
   },
   "labs": {
     "category": "playable",
-    "average": 6,
-    "count": 14,
+    "average": 6.07,
+    "count": 15,
     "tier": "S"
   },
   "lake": {
@@ -265,8 +265,8 @@
   },
   "lock": {
     "category": "playable",
-    "average": 5.67,
-    "count": 15,
+    "average": 5.63,
+    "count": 16,
     "tier": "A"
   },
   "matterWave": {
@@ -301,8 +301,8 @@
   },
   "pavilion": {
     "category": "playable",
-    "average": 5.15,
-    "count": 13,
+    "average": 5.21,
+    "count": 14,
     "tier": "A"
   },
   "perplex": {
@@ -313,8 +313,8 @@
   },
   "reactor": {
     "category": "unique",
-    "average": 5.58,
-    "count": 19,
+    "average": 5.65,
+    "count": 20,
     "tier": "A"
   },
   "refinery": {
@@ -337,8 +337,8 @@
   },
   "rooftops": {
     "category": "playable",
-    "average": 6.17,
-    "count": 12,
+    "average": 6.15,
+    "count": 13,
     "tier": "S"
   },
   "ruins": {
@@ -355,14 +355,14 @@
   },
   "satellite": {
     "category": "playable",
-    "average": 6.64,
-    "count": 14,
+    "average": 6.6,
+    "count": 15,
     "tier": "S"
   },
   "sewers": {
     "category": "playable",
-    "average": 5.38,
-    "count": 13,
+    "average": 5.43,
+    "count": 14,
     "tier": "A"
   },
   "shipwreck": {
@@ -379,8 +379,8 @@
   },
   "skyscrapers": {
     "category": "playable",
-    "average": 6.23,
-    "count": 13,
+    "average": 6.07,
+    "count": 14,
     "tier": "S"
   },
   "soft": {
@@ -415,14 +415,14 @@
   },
   "substructure": {
     "category": "playable",
-    "average": 5.17,
-    "count": 12,
+    "average": 5.15,
+    "count": 13,
     "tier": "A"
   },
   "subway": {
     "category": "unique",
-    "average": 5.3,
-    "count": 20,
+    "average": 5.38,
+    "count": 21,
     "tier": "A"
   },
   "superBall": {
