@@ -6,7 +6,7 @@
     "size": 2006467,
     "uploaded": 1795045210127,
     "average": 7,
-    "count": 3,
+    "count": 4,
     "tier": "S"
   },
   "-P5plZ26AX7fNiOLJGDc": {
@@ -35,8 +35,8 @@
     "description": "A level I made to showcase the implementation of custom mobs/bosses in maps. The level's boss is a soft-body boss based on the real-life bobbit worm, with a custom behavior loop. See the level code for more. This is a proof-of-concept map, and was designed for 'test export' mode---NOT regular n-gon.",
     "size": 18669,
     "uploaded": 1795027549113,
-    "average": 6.5,
-    "count": 2,
+    "average": 6.67,
+    "count": 3,
     "tier": "S"
   },
   "-P5_nY-wgvKHRuh8PHjP": {
@@ -65,8 +65,8 @@
     "description": "Just a sample",
     "size": 38457,
     "uploaded": 1795300822179,
-    "average": null,
-    "count": 0,
+    "average": 7,
+    "count": 1,
     "tier": null
   },
   "-P5brUs6VeXOMQ2wOBN5": {
@@ -95,9 +95,9 @@
     "description": "A spiral of puzzles that may challenge even the skilled.",
     "size": 142314,
     "uploaded": 1794870453263,
-    "average": 5.67,
-    "count": 3,
-    "tier": "A"
+    "average": 6,
+    "count": 4,
+    "tier": "S"
   },
   "-P6CtG1CPGE05kR6Jazc": {
     "name": "coolLevel3.js",
@@ -115,9 +115,9 @@
     "description": "Descend through a cave and adventure further and further as the tunnels get darker and narrower.",
     "size": 191650,
     "uploaded": 1795210014795,
-    "average": 5.5,
-    "count": 2,
-    "tier": "A"
+    "average": 6,
+    "count": 3,
+    "tier": "S"
   },
   "-P6uqATkWSaanYEcrUjz": {
     "name": "diadromos.js",
@@ -125,8 +125,8 @@
     "description": "A hallway with an upper and lower path you can easily switch between",
     "size": 106494,
     "uploaded": 1795209869729,
-    "average": 5,
-    "count": 4,
+    "average": 5.4,
+    "count": 5,
     "tier": "A"
   },
   "-P5yoCnChmmGeQPkeVrJ": {
@@ -215,9 +215,9 @@
     "description": "A series of map objects implemented in n-gon, but not yet available in the editor. This could either be because they are in beta, or they've been forgotten about. I have placed them in this map for sake of convenience and visibility.",
     "size": 5110,
     "uploaded": 1795309211133,
-    "average": 4,
-    "count": 1,
-    "tier": null
+    "average": 5.33,
+    "count": 3,
+    "tier": "A"
   },
   "-P5xCS-GaV-Qiq4bHIh5": {
     "name": "intrusion.js",
@@ -225,9 +225,19 @@
     "description": "A short level I made to test some code bits, including level music. The level track was originally composed by me as a joke, then modified to fit (so please ignore the poor composition quality, lol). Unfortunately, some of the camera code broke in a recent level editor update, sorry about that!",
     "size": 36907,
     "uploaded": 1794175783094,
-    "average": 3.67,
-    "count": 6,
+    "average": 3.86,
+    "count": 7,
     "tier": "C"
+  },
+  "-P7EsUldOVH6u-1t0ueS": {
+    "name": "joyride.js",
+    "author": "osti",
+    "description": "first map, enjoy!",
+    "size": 46201,
+    "uploaded": 1795562798329,
+    "average": 6,
+    "count": 1,
+    "tier": null
   },
   "-P5lU_dEluKfk2TzHWJA": {
     "name": "jumper _1_.js",
@@ -295,8 +305,8 @@
     "description": "long level where you acend a tower",
     "size": 98873,
     "uploaded": 1795209745365,
-    "average": 6,
-    "count": 2,
+    "average": 6.33,
+    "count": 3,
     "tier": "S"
   },
   "-P6Y7XBVQTt1jbNZkaiJ": {
@@ -305,8 +315,8 @@
     "description": "Leap of Faith!!",
     "size": 21865,
     "uploaded": 1794812027763,
-    "average": 5,
-    "count": 2,
+    "average": 5.67,
+    "count": 3,
     "tier": "A"
   },
   "-P6XUzuI3Qx3ADzdmNmk": {
@@ -315,8 +325,8 @@
     "description": "Beautiful stars, beautiful powerups.",
     "size": 19338,
     "uploaded": 1794801401567,
-    "average": 4,
-    "count": 3,
+    "average": 4.75,
+    "count": 4,
     "tier": "B"
   },
   "-P6kqSnA_zN3WD6_RFdD": {
@@ -326,7 +336,7 @@
     "size": 19667,
     "uploaded": 1795042172193,
     "average": 5,
-    "count": 4,
+    "count": 5,
     "tier": "A"
   },
   "-P5dOTsuQsVWmMHRYEWO": {
@@ -355,8 +365,8 @@
     "description": "map that revolves around an invincible satteliteBoss with few safe spots",
     "size": 63181,
     "uploaded": 1795209829346,
-    "average": 4.25,
-    "count": 4,
+    "average": 4.8,
+    "count": 5,
     "tier": "B"
   },
   "-P6l3WKHaotbrwRJsBLv": {
@@ -365,9 +375,9 @@
     "description": "where the slime in sewers comes from ig",
     "size": 77054,
     "uploaded": 1795045856794,
-    "average": 3.5,
-    "count": 2,
-    "tier": "C"
+    "average": 4.67,
+    "count": 3,
+    "tier": "B"
   },
   "-P79UDOs7Q56vEN2yWLi": {
     "name": "Sanitation2sample.js",
@@ -375,9 +385,9 @@
     "description": "sanitation stank, so I made another one",
     "size": 48486,
     "uploaded": 1795472287537,
-    "average": null,
-    "count": 0,
-    "tier": null
+    "average": 7,
+    "count": 2,
+    "tier": "S"
   },
   "-P6_OoP61AIdcfgKbP3K": {
     "name": "skillpuzzle _1_.js",
@@ -385,9 +395,9 @@
     "description": "Hehe",
     "size": 27350,
     "uploaded": 1794850113286,
-    "average": 1,
-    "count": 4,
-    "tier": "F"
+    "average": 2.2,
+    "count": 5,
+    "tier": "D"
   },
   "-P6-QWdo7x5wumMmOIBG": {
     "name": "skillpuzzle _1_.js",
@@ -439,15 +449,15 @@
     "count": 8,
     "tier": "C"
   },
-  "-P7AwPDFKDIeZ5um9JU1": {
-    "name": "StillLife.js",
+  "-P7Ej9Qc8iZAXGdvXGLI": {
+    "name": "StillLife _2_.js",
     "author": "xenon",
-    "description": "backrooms but in ngon",
-    "size": 199968,
-    "uploaded": 1795496715207,
-    "average": 4.5,
-    "count": 2,
-    "tier": "B"
+    "description": "backrooms but in ngon but i reupload because it broke",
+    "size": 199393,
+    "uploaded": 1795560351716,
+    "average": null,
+    "count": 0,
+    "tier": null
   },
   "-P6iZANGXtV1SHjtEvss": {
     "name": "talus.js",
@@ -455,9 +465,9 @@
     "description": "Caution: high blockslide risk in the area. This is designed to be more like standard n-gon maps.",
     "size": 28308,
     "uploaded": 1795003823724,
-    "average": 4.5,
-    "count": 2,
-    "tier": "B"
+    "average": 5.33,
+    "count": 3,
+    "tier": "A"
   },
   "-P60KokQMzjXXmMlwiXK": {
     "name": "tether _4_.js",
@@ -495,9 +505,19 @@
     "description": "Updated version of my first upload. It's mostly the same, but it's more movement friendly and has a bit more background detail and secrets",
     "size": 52342,
     "uploaded": 1795528400344,
-    "average": 6,
-    "count": 1,
-    "tier": null
+    "average": 6.5,
+    "count": 2,
+    "tier": "S"
+  },
+  "-P7DsE8PLha0k9QwTA7y": {
+    "name": "untitled.js",
+    "author": "Corny boi",
+    "description": "YOU ARE NOT ESCAPING THIS TIME(THE ULTIMATE WAVE)",
+    "size": 24124,
+    "uploaded": 1795545952915,
+    "average": 1,
+    "count": 2,
+    "tier": "F"
   },
   "-P6WIcEHTssyaly0NZnX": {
     "name": "waitingroom.js",
@@ -525,9 +545,9 @@
     "description": "my worst level yet",
     "size": 22758,
     "uploaded": 1795388182943,
-    "average": null,
-    "count": 0,
-    "tier": null
+    "average": 5.67,
+    "count": 3,
+    "tier": "A"
   },
   "-P6WDWVqrK0GaFDpuWUJ": {
     "name": "wrath.js",
